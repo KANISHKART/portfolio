@@ -4,8 +4,8 @@ import "./home.css";
 
 export default function Home() {
   const [windowDimensions, setHW] = useState({
-    winWidth: window.innerWidth,
-    winHeight: window.innerHeight,
+    winWidth: "",
+    winHeight: "",
   });
 
   const detectSize = () => {
@@ -30,9 +30,9 @@ export default function Home() {
         {windowDimensions.winWidth < 500 && <p>Kanishkar T</p>}
       </div>
       <div className="role-container">
-        I&apos;m <span class="typewrite-container">Full Stack Developer</span>
+        I&apos;m <span className="typewrite-container">Full Stack Developer</span>
       </div>
-      <div class="social-links">
+      <div className="social-links">
         <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
           LinkedIn
         </a>

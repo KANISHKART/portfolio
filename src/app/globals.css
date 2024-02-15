@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   gap: 1em;
   width: 100%;
-  min-height: 80vh;
+  min-height: 90vh;
   border:1px solid green;
 }
 
