@@ -10,8 +10,8 @@ export default function Page() {
       <Navbar />
       <Home />
       <Experience />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects />
+      <Contact />
     </div>
   );
 }
