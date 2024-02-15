@@ -1,3 +1,12 @@
+.hero-block {
+  display: block;
+  height: 700px;
+}
+
+#home {
+  padding-top: 4em;
+}
+
 .header-container {
   display: block;
   position: relative;
@@ -10,7 +19,7 @@
 .header-container p {
   margin: 0;
   padding: 0;
-  width:inherit;
+  width: inherit;
 }
 
 .role-container {

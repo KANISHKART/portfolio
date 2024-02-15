@@ -1,5 +1,5 @@
-"use client"
-import { useState, useEffect} from "react";
+"use client";
+import { useState, useEffect } from "react";
 import "./home.css";
 
 export default function Home() {
@@ -24,21 +24,24 @@ export default function Home() {
   }, [windowDimensions]);
 
   return (
-    <div id="home" className="container">
-      <div className="header-container">
-        {windowDimensions.winWidth > 500 && <p>Kanishkar Thirunavukkarasu</p>}
-        {windowDimensions.winWidth < 500 && <p>Kanishkar T</p>}
+    <section id="home" className="hero-block">
+      <div className="container">
+        <div className="header-container">
+          {windowDimensions.winWidth > 500 && <p>Kanishkar Thirunavukkarasu</p>}
+          {windowDimensions.winWidth <= 500 && <p>Kanishkar T</p>}
+        </div>
+        <div className="role-container">
+          I&apos;m{" "}
+          <span className="typewrite-container">Full Stack Developer</span>
+        </div>
+        <div className="social-links">
+          <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
+            LinkedIn
+          </a>
+          <a href="https://github.com/KANISHKART">Github</a>
+          <a href="mailto:kanishkar.thiruna@gmail.com">Mail</a>
+        </div>
       </div>
-      <div className="role-container">
-        I&apos;m <span className="typewrite-container">Full Stack Developer</span>
-      </div>
-      <div className="social-links">
-        <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
-          LinkedIn
-        </a>
-        <a href="https://github.com/KANISHKART">Github</a>
-        <a href="mailto:kanishkar.thiruna@gmail.com">Mail</a>
-      </div>
-    </div>
+    </section>
   );
 }
