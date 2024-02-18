@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #23146e;
+  --bg-color: #0f092e;
 
   --primary-color: white;
   --secondary-color: #70fe5a;
@@ -129,6 +129,7 @@ h2{
       --text-3xl: 1.55rem;
       --text-4xl: 1.875rem;
     }
+    
   }
   
   @media (max-width: 1250px) {
