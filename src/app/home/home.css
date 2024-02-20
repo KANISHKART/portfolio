@@ -9,12 +9,15 @@
 
 .header-container {
   display: block;
+  position: relative;
   text-align: center;
   font-size: var(--text-6xl);
   font-weight: 600;
-  background: -webkit-linear-gradient( 120deg, #bd34fe 30%, #41d1ff );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+}
+
+.header-container p {
+  margin: 0;
+  padding: 0;
 }
 
 .role-container {

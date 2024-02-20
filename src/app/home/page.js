@@ -3,7 +3,8 @@ import "./home.css";
 export default function Home() {
   return (
       <div className="container">
-        <div className="header-container">Kanishkar Thirunavukkarasu</div>
+        <div className="header-container">
+          <p>Kanishkar Thirunavukkarasu</p></div>
         <div className="role-container">
           I&apos;m <span class="typewrite-container">Full Stack Developer</span>
         </div>
