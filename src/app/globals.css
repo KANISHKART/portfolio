@@ -1,33 +1,75 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-color: #1B1B1F;
+
+  --primary-color: #DFDFD6;
+  --secondary-color: #70fe5a;
+
+  --text-1xs: 0.6rem;
+  --text-xs: 0.8rem;
+  --text-small: 0.945rem;
+  --text-base: 1.100rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 2.75rem;
+  --text-6xl: 3rem;
+  --text-7xl: 3.5rem;
+  --text-8xl: 4rem;
+  --text-9xl: 6rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  transition: ease-in-out;
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header-tops {
+  display: flex;
+  height: 100dvh;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height:100dvh;
+  min-width: 370px;
 }
+
+@media (width<=800px) {
+    body {
+      --text-small: 0.7rem;
+      --text-base: 0.8rem;
+      --text-lg: 1rem;
+      --text-xl: 1.125rem;
+      --text-2xl: 1.25rem;
+      --text-3xl: 1.55rem;
+      --text-4xl: 1.875rem;
+    }
+    
+  }
+  
+  @media (max-width: 1250px) {
+   
+  }
+  
+  @media (max-width: 900px) {
+  
+  }
+  
+  @media (max-width: 500px) {
+  
+  }
+  
