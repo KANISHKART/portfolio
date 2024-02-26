@@ -1,10 +1,13 @@
 :root {
-  --bg-color: #0F172A;
+  --bg-color: #ffffff;
 
-  --primary-color: #E2E8F0;
-  --secondary-color: #70fe5a;
-
-  --third-color: #132F4C;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --fourth-color: #55d5d2;
+  
+/* 
+  --mouse-x: 1243px;
+  --mouse-y: 291px; */
 
   --text-1xs: 0.6rem;
   --text-xs: 0.8rem;
@@ -37,17 +40,26 @@ body {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
   transition: ease-in-out;
+  min-height: 100dvh;
+  min-width: 320px;
 }
 
 .header-tops {
-  display: flex;
-  height: 100dvh;
-  align-items: center;
-  justify-content: flex-start;
+  display: block;
+  box-sizing: border-box;
   flex-direction: column;
-  min-height: 100dvh;
-  min-width: 370px;
 }
+
+/* .header-tops::before{
+  background: radial-gradient( 800px circle at var(--mouse-x) var(--mouse-y) ,
+  rgba(59, 82, 187, 0.397),transparent 70%);
+  position: sticky;
+  content: "";
+  z-index: -2;
+  width:100%;
+  border: 1px solid green;
+  height:100%;
+} */
 
 .container {
   display: flex;
@@ -56,7 +68,6 @@ body {
   flex-direction: column;
   gap: 1em;
   height: inherit;
-  box-sizing: border-box;
 }
 
 @media (width<=800px) {
@@ -68,29 +79,55 @@ body {
     --text-2xl: 1.25rem;
     --text-3xl: 1.55rem;
     --text-4xl: 1.875rem;
+    --text-5xl: 2rem;
+    --text-6xl: 2.125rem;
+    --text-7xl: 2.75rem;
+    --text-8xl: 3rem;
+    --text-9xl: 4rem;
   }
+  
+  .header-tops::before{
+    display: none;
+  }
+
+  .header-container {
+    font-size: var(--text-4xl);
+  }
+  
+  .about-container {
+    width: 40%;
+  }
+
 }
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
+ 
+  .about-container {
+    width: 80%;
   }
+
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 960px;
+
+  .about-container {
+    width: 80%;
   }
+
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 720px;
+
+  .about-container {
+    width: 80%;
   }
+
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 540px;
+
+  .about-container {
+    width: 80%;
   }
+
 }

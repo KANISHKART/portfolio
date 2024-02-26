@@ -3,37 +3,49 @@ import { useState, useEffect } from "react";
 import "./home.css";
 
 export default function Home() {
-  const [windowDimensions, setHW] = useState({
-    winWidth: "",
-    winHeight: "",
-  });
+  // const [windowDimensions, setHW] = useState({
+  //   winWidth: "",
+  //   winHeight: "",
+  // });
 
-  const detectSize = () => {
-    setHW({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    });
-  };
+  // const detectSize = () => {
+  //   setHW({
+  //     winWidth: window.innerWidth,
+  //     winHeight: window.innerHeight,
+  //   });
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", detectSize);
+  // useEffect(() => {
+  //   window.addEventListener("resize", detectSize);
 
-    return () => {
-      window.removeEventListener("resize", detectSize);
-    };
-  }, [windowDimensions]);
+  //   return () => {
+  //     window.removeEventListener("resize", detectSize);
+  //   };
+  // }, [windowDimensions]);
 
   return (
     <section id="home" className="hero-block">
       <div className="container">
+        
         <div className="header-container">
-          {windowDimensions.winWidth > 500 && <p>Kanishkar Thirunavukkarasu</p>}
-          {windowDimensions.winWidth <= 500 && <p>Kanishkar T</p>}
+          <div className="hero-background"></div>
+          <p>Kanishkar Thirunavukkarasu</p>
         </div>
+
         <div className="role-container">
-          I&apos;m{" "}
+          I&apos;m
           <span className="typewrite-container">Full Stack Developer</span>
         </div>
+
+        {/* <div className="about-container">
+          <span className="about-container">
+            I have 4+ years of experience as a software developer. I am
+            interested in learning about web development and related
+            technologies. In my liesure time I like to play cricket, watch tv
+            shows or movies
+          </span>
+        </div> */}
+
         <div className="social-links">
           <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
             LinkedIn
