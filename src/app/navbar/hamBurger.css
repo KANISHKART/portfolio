@@ -45,9 +45,10 @@ body.hide {
 .nav-content{
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: center;
   text-align: center;
   text-wrap: wrap;
+  padding: 10px 0px;
 }
 
 .nav-content a {
@@ -56,6 +57,12 @@ body.hide {
   color: var(--secondary-color);
   font-family: inherit;
   font-size: var(--text-xl);
-  text-align: left;
+  text-align: center;
   margin: 0px 10px;
+  padding: 1.5em 0px;
+}
+
+.nav-content a:hover{
+ background-color: white;
+ color: black;
 }
