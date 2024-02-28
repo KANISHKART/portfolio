@@ -1,9 +1,13 @@
 :root {
-  --bg-color: #ffffff;
 
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
-  --fourth-color: #55d5d2;
+  --bg-color: hsl(0, 0%, 100%);
+  --primary-color: hsl(0, 0%, 0%);
+  --secondary-color: hsl(0, 0%, 11%);
+
+  --blue-theme: hsl(221.2 83.2% 53.3%);
+
+  --button-bg: hsl(0, 0%, 100%);
+  --button-text: hsl(0, 0%, 0%);
   
 /* 
   --mouse-x: 1243px;

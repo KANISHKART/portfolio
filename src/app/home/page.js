@@ -37,15 +37,6 @@ export default function Home() {
           <span className="typewrite-container">Full Stack Developer</span>
         </div>
 
-        {/* <div className="about-container">
-          <span className="about-container">
-            I have 4+ years of experience as a software developer. I am
-            interested in learning about web development and related
-            technologies. In my liesure time I like to play cricket, watch tv
-            shows or movies
-          </span>
-        </div> */}
-
         <div className="social-links">
           <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
             LinkedIn

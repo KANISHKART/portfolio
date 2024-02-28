@@ -1,6 +1,7 @@
 import { createPortal } from "react-dom";
 import "./hamBurger.css";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function HamBurger({ showBurgerContent }) {
   useEffect(() => {
@@ -17,14 +18,13 @@ export default function HamBurger({ showBurgerContent }) {
 
   return createPortal(
     <div className="sidebar-nav">
-
       <div className="close-action">
-        <button type="button" onClick={closeHam}>
-          close
-        </button>
+        <span className="close-icon" onClick={closeHam}>
+          {" "}
+        </span>
       </div>
-      
-      <nav className="nav-content">
+
+      <nav className="ham-content">
         <a onClick={closeHam} href="#home">
           Home
         </a>
@@ -38,12 +38,15 @@ export default function HamBurger({ showBurgerContent }) {
           Skills
         </a>
         <a onClick={closeHam} href="#contact">
-          Resume
-        </a>
-        <a onClick={closeHam} href="#contact">
           Contact
         </a>
       </nav>
+
+      <div className="button-action">
+        <button className="resume-button" type="button">
+          Resume
+        </button>
+      </div>
     </div>,
     document.body
   );

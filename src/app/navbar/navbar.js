@@ -11,7 +11,7 @@ export default function Navbar() {
   const handleScreenResize= useCallback(event =>{
 
     const width = event ? event.srcElement.innerWidth : window.innerWidth;
-    if(width <800){
+    if(width <= 800){
       setShowHamBurger(true);
     }
     else{
@@ -21,16 +21,11 @@ export default function Navbar() {
   },[])
 
   useEffect(() => {
-
     window.addEventListener("resize", handleScreenResize);
-
     handleScreenResize();
-
     return ()=>{
       window.removeEventListener("resize", handleScreenResize)
     }
-
-
   }, [handleScreenResize, showBurgerContent]);
 
   return (
@@ -41,12 +36,12 @@ export default function Navbar() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Skills</a>
-          <a href="#contact">Resume</a>
           <a href="#contact">Contact</a>
+          <button className="resume-button" type="button">Resume</button>
         </nav>
       )}
 
-      {showHamBurger && (
+      {showHamBurger && !showBurgerContent &&(
         <div className="burger" onClick={()=>setShowBurgerContent((prev)=>(!prev))} >
           <div className="hamburger-menu">
             <span className="bar"></span>

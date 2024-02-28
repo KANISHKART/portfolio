@@ -1,8 +1,8 @@
 .sidebar-nav {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.81);
+  background-color: var(--bg-color);
   display: flex;
-  color: white;
+  color: var(--primary-color);
   height: 100%;
   position: fixed;
   overflow-y: auto;
@@ -18,51 +18,73 @@ body.hide {
   overflow: hidden;
 }
 
-.sidebar-nav button {
-  display: flex;
-  justify-content: center;
-  width: max-content;
-  background-color: white;
-  cursor: pointer;
-  padding: 0px 5px;
-  margin: 0;
-  outline: none;
-  border: 1px solid green;
-}
-
-.sidebar-nav button:hover {
-  background-color: green;
-  color: white;
-}
-
 
 .close-action{
     display: flex;
     justify-content: right;
-    border: 1px solid red;
-
+    align-items: center;
+    align-content: center;
 }
-.nav-content{
+
+.close-icon{
+  cursor: pointer;
+  content:"";
+  height: 30px;
+  width: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding:10px;
+}
+
+.close-icon::before{
+  position: absolute;
+  content:"";
+  height: 30px;
+  width: 2px;
+  background-color: var(--primary-color);
+  transform: rotate(-45deg);
+}
+
+.close-icon::after{
+  position: absolute;
+  content:"";
+  height: 30px;
+  width: 2px;
+  background-color: var(--primary-color);
+  transform: rotate(45deg);
+}
+
+.ham-content{
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   text-wrap: wrap;
-  padding: 10px 0px;
 }
 
-.nav-content a {
+.ham-content a {
   position: relative;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   font-family: inherit;
   font-size: var(--text-xl);
   text-align: center;
-  margin: 0px 10px;
   padding: 1.5em 0px;
 }
 
-.nav-content a:hover{
- background-color: white;
- color: black;
+.ham-content a:hover{
+ background-color: var(--button-text);
+ color: var(--button-bg); 
+}
+
+.button-action{
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+
+.button-action button{
+  padding: 18px 50px;
 }

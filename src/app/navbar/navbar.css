@@ -26,7 +26,26 @@
   font-family: inherit;
   font-size: var(--text-xl);
   text-align: left;
-  margin: 0px 10px;
+  margin: 0px 20px;
+}
+
+.resume-button{
+
+  font: inherit;
+  font-size: var(--text-xl);
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0px 20px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid black;
+  transition: ease-in-out .3s;
+ 
+}
+
+.resume-button:hover{
+  transform : translate(-5px, -2px);
+  box-shadow: 5px 5px var(--blue-theme);
 }
 
 .navbar a:after {
