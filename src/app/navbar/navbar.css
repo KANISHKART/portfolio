@@ -1,21 +1,53 @@
 .nav-header {
-  padding: 1em 0em;
+  padding: 1em 2em;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 3em;
   background-color: rgb(255, 255, 255);
   z-index: 13;
   box-shadow: 0 10px 30px -10px rgb(227, 227, 227);
+  
 }
 
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-text{
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 2px;
+  padding:15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+.logo-text{
+  border: 2px solid rgb(46, 46, 46);
+  border-radius: 2px;
+  padding:15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+
 .navbar {
-  display: block;
-  justify-content: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: inherit;
   text-align: center;
 }

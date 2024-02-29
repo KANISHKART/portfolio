@@ -1,35 +1,36 @@
+import Image from "next/image";
 import HamBurger from "./hamBurger";
 import "./navbar.css";
 import { useState, useEffect, useCallback } from "react";
 export default function Navbar() {
-
-
   const [showHamBurger, setShowHamBurger] = useState(false);
 
   const [showBurgerContent, setShowBurgerContent] = useState(false);
 
-  const handleScreenResize= useCallback(event =>{
-
+  const handleScreenResize = useCallback((event) => {
     const width = event ? event.srcElement.innerWidth : window.innerWidth;
-    if(width <= 800){
+    if (width <= 800) {
       setShowHamBurger(true);
-    }
-    else{
-      setShowBurgerContent(false)
+    } else {
+      setShowBurgerContent(false);
       setShowHamBurger(false);
     }
-  },[])
+  }, []);
 
   useEffect(() => {
     window.addEventListener("resize", handleScreenResize);
     handleScreenResize();
-    return ()=>{
-      window.removeEventListener("resize", handleScreenResize)
-    }
+    return () => {
+      window.removeEventListener("resize", handleScreenResize);
+    };
   }, [handleScreenResize, showBurgerContent]);
 
   return (
     <header className="nav-header">
+      <div class="logo-container">
+        <div className="logo-text">K</div>
+      </div>
+
       {!showHamBurger && (
         <nav className="navbar">
           <a href="#home">Home</a>
@@ -37,24 +38,31 @@ export default function Navbar() {
           <a href="#projects">Projects</a>
           <a href="#contact">Skills</a>
           <a href="#contact">Contact</a>
-          <button className="resume-button" type="button">Resume</button>
+          <button className="resume-button" type="button">
+            Resume
+          </button>
         </nav>
       )}
 
-      {showHamBurger && !showBurgerContent &&(
-        <div className="burger" onClick={()=>setShowBurgerContent((prev)=>(!prev))} >
+      {showHamBurger && !showBurgerContent && (
+        <div
+          className="burger"
+          onClick={() => setShowBurgerContent((prev) => !prev)}
+        >
           <div className="hamburger-menu">
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
           </div>
         </div>
-
-       
       )}
 
-    {showBurgerContent && <HamBurger handleClose={setShowBurgerContent} isOpen={showBurgerContent} />}
-
+      {showBurgerContent && (
+        <HamBurger
+          handleClose={setShowBurgerContent}
+          isOpen={showBurgerContent}
+        />
+      )}
     </header>
   );
 }
