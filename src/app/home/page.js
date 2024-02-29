@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "./home.css";
+import Image from "next/image";
 
 export default function Home() {
   // const [windowDimensions, setHW] = useState({
@@ -26,7 +27,6 @@ export default function Home() {
   return (
     <section id="home" className="hero-block">
       <div className="container">
-        
         <div className="header-container">
           <div className="hero-background"></div>
           <p>Kanishkar Thirunavukkarasu</p>
@@ -38,11 +38,16 @@ export default function Home() {
         </div>
 
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu">
-            LinkedIn
+          <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu" target="_blank">
+            <Image src="linkedin.svg" height={40} width={40} alt="linkedin" />
           </a>
-          <a href="https://github.com/KANISHKART">Github</a>
-          <a href="mailto:kanishkar.thiruna@gmail.com">Mail</a>
+          <a href="https://github.com/KANISHKART" target="_blank">
+            {" "}
+            <Image src="github.svg" height={40} width={40} alt="github" />
+          </a>
+          <a href="mailto:kanishkar.thiruna@gmail.com" target="_blank" >
+            <Image src="email.svg" height={40} width={40} alt="email" />
+          </a>
         </div>
       </div>
     </section>

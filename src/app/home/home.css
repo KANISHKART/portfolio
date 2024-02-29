@@ -14,7 +14,6 @@
   font-size: var(--text-6xl);
   font-weight: 600;
   width: 100%;
- 
 }
 
 .hero-background{
@@ -22,9 +21,8 @@
   top: 20%;
   width: 100%;
   height: 40px;
-  /* background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  filter: blur(40px); */
 }
+
 .header-container p {
   margin: 0;
   padding: 0;
@@ -94,6 +92,7 @@
   flex-wrap: wrap;
   align-content: center;
   padding: 10px 5px;
+  font-size: var(--text-xl);
 }
 
 .social-links a {
@@ -106,3 +105,4 @@
   transition: border-bottom 0.5s ease-in-out;
   border-bottom: 3px solid var(--secondary-color);
 }
+
