@@ -20,6 +20,7 @@
 }
 
 .logo-text{
+  cursor: pointer;
   border: 2px solid rgb(46, 46, 46);
   border-radius: 2px;
   padding:15px;
@@ -27,21 +28,14 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  transition: ease-in-out .3s;
 }
 
 
-.logo-text{
-  border: 2px solid rgb(46, 46, 46);
-  border-radius: 2px;
-  padding:15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.logo-text:hover{
+  box-shadow: 5px 5px var(--blue-theme);
+  transform : translate(-5px, -2px);
 }
-
-
-
 
 .navbar {
   display: flex;
