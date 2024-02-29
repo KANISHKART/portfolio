@@ -1,23 +1,28 @@
 import { createPortal } from "react-dom";
 import "./hamBurger.css";
-import { useEffect } from "react";
-import Image from "next/image";
+import { useEffect,useState } from "react";
 
-export default function HamBurger({ showBurgerContent }) {
+export default function HamBurger({handleClose, isOpen} ) {
+
+  const [closingAnimation, setclosingAnimation]=useState(true);
+
   useEffect(() => {
-    if (showBurgerContent) document.body.style.overflow = "hidden";
+    if (isOpen) document.body.style.overflow = "hidden";
 
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [showBurgerContent]);
+  }, [isOpen]);
 
   const closeHam = () => {
-    showBurgerContent(false);
+    setclosingAnimation(false);
+    setTimeout(() => {
+      handleClose(false);
+    }, 200);
   };
 
   return createPortal(
-    <div className="sidebar-nav">
+    <div className={`sidebar-nav ${closingAnimation? `open` :`close`}`}>
       <div className="close-action">
         <span className="close-icon" onClick={closeHam}>
           {" "}

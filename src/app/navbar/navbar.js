@@ -53,7 +53,7 @@ export default function Navbar() {
        
       )}
 
-    {showBurgerContent && <HamBurger showBurgerContent={setShowBurgerContent}/>}
+    {showBurgerContent && <HamBurger handleClose={setShowBurgerContent} isOpen={showBurgerContent} />}
 
     </header>
   );

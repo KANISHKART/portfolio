@@ -7,9 +7,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2em;
-  background-color: transparent;
-  z-index: 99;
+  height: 3em;
+  background-color: rgb(255, 255, 255);
+  z-index: 13;
+  box-shadow: 0 10px 30px -10px rgb(227, 227, 227);
 }
 
 .navbar {

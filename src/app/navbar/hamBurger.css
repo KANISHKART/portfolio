@@ -8,11 +8,43 @@
   overflow-y: auto;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
+  width: 0;
+  display: flex;
+  justify-content: right;
   flex-direction: column;
   z-index: 1000;
+ 
 }
+
+.sidebar-nav.open{
+  animation: open-ham .2s ease-in-out forwards;
+}
+
+.sidebar-nav.close{
+  animation: close-ham .2s ease-in-out forwards;
+}
+
+@keyframes open-ham {
+  0%{
+    width: 0%;
+  }
+
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes close-ham {
+  0%{
+    width: 100%;
+  }
+
+  100%{
+    width: 0%;
+  }
+}
+
 
 body.hide {
   overflow: hidden;
