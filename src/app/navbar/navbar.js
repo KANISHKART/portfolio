@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleScreenResize = useCallback((event) => {
     const width = event ? event.srcElement.innerWidth : window.innerWidth;
-    if (width <= 800) {
+    if (width <= 900) {
       setShowHamBurger(true);
     } else {
       setShowBurgerContent(false);

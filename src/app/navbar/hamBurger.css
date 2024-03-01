@@ -14,80 +14,77 @@
   justify-content: right;
   flex-direction: column;
   z-index: 1000;
- 
 }
 
-.sidebar-nav.open{
-  animation: open-ham .2s ease-in-out forwards;
+.sidebar-nav.open {
+  animation: open-ham 0.2s ease-in-out forwards;
 }
 
-.sidebar-nav.close{
-  animation: close-ham .2s ease-in-out forwards;
+.sidebar-nav.close {
+  animation: close-ham 0.2s ease-in-out forwards;
 }
 
 @keyframes open-ham {
-  0%{
+  0% {
     width: 0%;
   }
 
-  100%{
+  100% {
     width: 100%;
   }
 }
 
 @keyframes close-ham {
-  0%{
+  0% {
     width: 100%;
   }
 
-  100%{
+  100% {
     width: 0%;
   }
 }
-
 
 body.hide {
   overflow: hidden;
 }
 
-
-.close-action{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    align-content: center;
+.close-action {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  align-content: center;
 }
 
-.close-icon{
+.close-icon {
   cursor: pointer;
-  content:"";
+  content: "";
   height: 30px;
   width: 40px;
   position: relative;
   display: flex;
   justify-content: center;
-  padding:15px 10px;
+  padding: 25px;
 }
 
-.close-icon::before{
+.close-icon::before {
   position: absolute;
-  content:"";
+  content: "";
   height: 30px;
   width: 2px;
   background-color: var(--primary-color);
   transform: rotate(-45deg);
 }
 
-.close-icon::after{
+.close-icon::after {
   position: absolute;
-  content:"";
+  content: "";
   height: 30px;
   width: 2px;
   background-color: var(--primary-color);
   transform: rotate(45deg);
 }
 
-.ham-content{
+.ham-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,18 +102,17 @@ body.hide {
   padding: 1.5em 0px;
 }
 
-.ham-content a:hover{
- background-color: var(--button-text);
- color: var(--button-bg); 
+.ham-content a:hover {
+  background-color: var(--button-text);
+  color: var(--button-bg);
 }
 
-.button-action{
+.button-action {
   display: flex;
   justify-content: center;
   padding: 20px 10px;
 }
 
-
-.button-action button{
+.button-action button {
   padding: 18px 50px;
 }

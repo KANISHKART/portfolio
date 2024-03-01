@@ -9,7 +9,6 @@
   background-color: rgb(255, 255, 255);
   z-index: 13;
   box-shadow: 0 10px 30px -10px rgb(227, 227, 227);
-  
 }
 
 .logo-container{
@@ -20,10 +19,11 @@
 }
 
 .logo-text{
+  font-size: var(--text-2xl);
   cursor: pointer;
   border: 2px solid rgb(46, 46, 46);
   border-radius: 2px;
-  padding:15px;
+  padding: 8px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,6 @@
   font-size: var(--text-2xl);
 }
 
-
 .burger{
   display: flex;
   justify-content: right;
@@ -108,7 +107,7 @@
 .hamburger-menu{
   display: flex;
   width: 30px;
-  gap: 6px;
+  gap: 7px;
   cursor: pointer;
   flex-direction: column;
   padding:0px 10px;
