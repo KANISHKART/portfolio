@@ -9,9 +9,7 @@
   --button-bg: hsl(0, 0%, 100%);
   --button-text: hsl(0, 0%, 0%);
   
-/* 
-  --mouse-x: 1243px;
-  --mouse-y: 291px; */
+  --nav-height: 3em;
 
   --text-1xs: 0.6rem;
   --text-xs: 0.8rem;

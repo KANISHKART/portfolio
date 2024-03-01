@@ -9,6 +9,7 @@
   background-color: rgb(255, 255, 255);
   z-index: 13;
   box-shadow: 0 10px 30px -10px rgb(227, 227, 227);
+  height: var(--nav-height);
 }
 
 .logo-container{

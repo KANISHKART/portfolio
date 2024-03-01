@@ -4,26 +4,7 @@ import "./home.css";
 import Image from "next/image";
 
 export default function Home() {
-  // const [windowDimensions, setHW] = useState({
-  //   winWidth: "",
-  //   winHeight: "",
-  // });
-
-  // const detectSize = () => {
-  //   setHW({
-  //     winWidth: window.innerWidth,
-  //     winHeight: window.innerHeight,
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", detectSize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", detectSize);
-  //   };
-  // }, [windowDimensions]);
-
+  
   return (
     <section id="home" className="hero-block">
       <div className="container">
