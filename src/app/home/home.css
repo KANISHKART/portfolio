@@ -4,7 +4,7 @@
 }
 
 #home {
-  padding-top: 4em;
+  padding-top: var(--nav-height);
 }
 
 .header-container {

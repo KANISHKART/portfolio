@@ -7,21 +7,15 @@ import Navbar from "./navbar/navbar";
 import Projects from "./projects/page";
 
 export default function Page() {
-  // const updateMousePointer = (e) => {
-  //   document.documentElement.style.setProperty("--mouse-x", e.clientX + "px");
-  //   document.documentElement.style.setProperty("--mouse-y", e.clientY + "px");
-
-  //   console.log(e.clientX);
-  //   console.log(e.clientY);
-  // };
-
   return (
-    <div className="header-tops">
+    <div className="portfolio-content">
       <Navbar />
-      <Home />
-      <Experience />
-      <Projects />
-      <Contact />
+      <main>
+        <Home />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
     </div>
   );
 }

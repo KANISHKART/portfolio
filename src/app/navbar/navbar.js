@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <header className="nav-header">
-      <div class="logo-container">
+      <div className="logo-container">
         <div className="logo-text">K</div>
       </div>
 

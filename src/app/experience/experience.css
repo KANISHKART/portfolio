@@ -1,8 +1,79 @@
 .experience-block {
-  display: block;
-  height: 700px;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--nav-height);
+  
 }
 
-#experience {
-  padding-top: 4em;
+.experience-block .container{
+  display: flex;
+  justify-content: flex-start;
+  padding: 2em;
+  width: 800px;
 }
+
+.experience-block .container .title{
+  display: flex;
+  justify-content: center;
+  text-wrap: nowrap;
+  width: inherit;
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.experience-block .container .title::after{
+  content: "";
+  width: 100%;
+  background-color: hsl(0, 0%, 79%);
+  height: 1px;
+  position: relative;
+  top: 25px;
+  margin-left: 1em
+}
+
+.experience-block .content{
+  display: flex;
+}
+
+.companies{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.company{
+  cursor: pointer;
+  display: flex;
+  padding: 1em;
+  justify-content: flex-start;
+  border: 4px solid rgba(255, 255, 255, 0);
+  background-color: #a0f295;
+}
+
+.company:hover::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  color: red;
+}
+
+.company-block{
+  padding: 0em 1em;
+}
+
+.experience-company{
+  font-weight: 800;
+}
+
+.experience-duration{
+  font-style: italic;
+  font-size: var(--text-small);
+}
+
+.experience-sumary{
+  font-size: var(--text-base);
+}
+
