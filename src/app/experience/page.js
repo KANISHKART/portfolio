@@ -19,19 +19,8 @@ export default function Experience() {
               <ul>
                 <li>
                   Led the design and digitization of cloud native simulation
-                  tool using React, Spring Boot, and PostgreSQL in AWS. This
-                  transformation enhanced automation of simulations by over 70%
+                  tool. This transformation enhanced automation of simulations by over 70%
                   and streamlining report document management for analysis.
-                </li>
-
-                <li>
-                  Implemented UI/UX wireframes, designed database schema, set up
-                  a Continuous Delivery pipeline using Jenkins, utilized Git for
-                  version control systems, setup Docker and Kubernetes
-                  configuration within AWS EKS, resulting in enhanced
-                  performance, scalability, and reliability. Collaborated
-                  closely with the product organization to clarify and prune
-                  requirements.
                 </li>
 
                 <li>
