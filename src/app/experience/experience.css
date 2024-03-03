@@ -49,7 +49,12 @@
   padding: 1em;
   justify-content: flex-start;
   border: 4px solid rgba(255, 255, 255, 0);
-  background-color: #a0f295;
+  background-color: #ffffff;
+}
+
+.company:hover{
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 .company:hover::after{
@@ -57,7 +62,6 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  color: red;
 }
 
 .company-block{
