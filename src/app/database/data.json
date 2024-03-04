@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Mahindra",
+    "title": "Software Engineer",
+    "date": "Jun 2022 - Jul 2023",
+    "summary": [
+      "Led the design and digitization of cloud native simulation tool. This transformation enhanced automation of simulations by over 70% and streamlining report document management for analysis.",
+      "Ideated and developed a new simulation algorithm based on the Monte Carlo method, resulting in an improved forecast prediction by over 90%, directly correlating with a 30% increase in sales. Utilized multi-threaded and asynchronous programming paradigms to optimize performance and scalability of the algorithm.",
+      "Managed TCP/IP, HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud, Improved the product's high availability and fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience. This project successfully completed and delivered well ahead of the deadline."
+    ],
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Infosys",
+    "title": "Senior Systems Engineer",
+    "date": "Sep 2019 - Jun 2022",
+    "summary": [
+      "Led the design and digitization of cloud native simulation tool. This transformation enhanced automation of simulations by over 70% and streamlining report document management for analysis.",
+      "Ideated and developed a new simulation algorithm based on the Monte Carlo method, resulting in an improved forecast prediction by over 90%, directly correlating with a 30% increase in sales. Utilized multi-threaded and asynchronous programming paradigms to optimize performance and scalability of the algorithm.",
+      "Managed TCP/IP, HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud, Improved the product's high availability and fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience. This project successfully completed and delivered well ahead of the deadline."
+    ],
+    "active": false
+  }
+]
