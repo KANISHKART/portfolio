@@ -39,7 +39,7 @@ export default function Experience() {
           {experienceData &&
             experienceData.map((data) =>
               data.active ? (
-                <div className="company-block" key={data.id}>
+                <div className="company-block" key={`company-${data.id}`}>
                   <div className="experience-title">{data.title}</div>
 
                   <div className="experience-duration">{data.date}</div>

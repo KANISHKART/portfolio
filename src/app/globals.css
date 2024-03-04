@@ -1,14 +1,18 @@
 :root {
-
   --bg-color: hsl(0, 0%, 100%);
   --primary-color: hsl(0, 0%, 0%);
   --secondary-color: hsl(0, 0%, 11%);
 
   --blue-theme: hsl(221.2 83.2% 53.3%);
 
+  --secondary-menu: hsla(0, 0%, 0%, 0.6);
+  --primary-menu: hsl(0, 0%, 0%);
+
+  --light-border: rgb(212, 212, 212);
+
   --button-bg: hsl(0, 0%, 100%);
   --button-text: hsl(0, 0%, 0%);
-  
+
   --nav-height: 4em;
 
   --text-1xs: 0.6rem;
@@ -52,7 +56,7 @@ body {
   flex-direction: column;
 }
 
-main{
+main {
   display: block;
   justify-content: center;
 }
@@ -81,80 +85,66 @@ main{
     --text-8xl: 3rem;
     --text-9xl: 4rem;
   }
-  
-  .header-tops::before{
+
+  .header-tops::before {
     display: none;
   }
 
   .header-container {
     font-size: var(--text-4xl);
   }
-  
+
   .about-container {
     width: 40%;
   }
-
-
 }
 
 @media (max-width: 1200px) {
- 
   .about-container {
     width: 80%;
   }
-
 }
 
 @media (max-width: 992px) {
-
   .about-container {
     width: 80%;
   }
-
 }
 
 @media (max-width: 768px) {
-
   .about-container {
     width: 80%;
   }
-
 }
 
 @media (width <= 576px) {
-
   .about-container {
     width: 80%;
   }
-  
-  .logo-text{
+
+  .logo-text {
     font-size: var(--text-lg) !important;
     padding: 6px 12px !important;
   }
 
-  .experience-block .container .title::after{
+  .experience-block .container .title::after {
     width: 200px !important;
   }
-  
-
 }
 
 ::-webkit-scrollbar {
   width: 4px;
 }
 
-
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
 
 ::-webkit-scrollbar-thumb {
-  background: #555; 
+  background: #555;
   border-radius: 2px;
 }
 
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
