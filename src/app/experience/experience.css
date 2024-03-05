@@ -95,13 +95,12 @@
   padding-bottom: 4px;
 }
 
-.experience-summary{
+.experience-summary {
   display: flex;
   padding: 1em;
   text-align: justify;
   font-size: var(--text-lg);
 }
-
 
 .experience-summary ul,
 li {
@@ -109,3 +108,20 @@ li {
   padding: 0;
 }
 
+.experience-skills {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill-tag {
+  display: flex;
+  flex-direction: row;
+  background-color:  var(--blue-theme);
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: var(--text-md);
+  margin: 4px;
+  padding: 8px 16px;
+}

@@ -13,12 +13,15 @@
   --button-bg: hsl(0, 0%, 100%);
   --button-text: hsl(0, 0%, 0%);
 
+  --border-radius: 20px;
+
   --nav-height: 4em;
 
   --text-1xs: 0.6rem;
   --text-xs: 0.8rem;
   --text-small: 0.945rem;
   --text-base: 1.1rem;
+  --text-md: 1.1rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;

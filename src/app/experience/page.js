@@ -51,6 +51,16 @@ export default function Experience() {
                       ))}
                     </ul>
                   </div>
+
+                  <div className="experience-skills">
+                    {data.skills.map((skill) => {
+                      return (
+                        <div className="skill-tag" key={`skill ${data.id}`}>
+                          {skill}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               ) : (
                 <></>
