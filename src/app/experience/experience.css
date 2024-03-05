@@ -118,10 +118,10 @@ li {
 .skill-tag {
   display: flex;
   flex-direction: row;
-  background-color:  var(--blue-theme);
-  border-radius: var(--border-radius);
-  color: white;
-  font-size: var(--text-md);
+  background-color:  hsl(0, 0%, 95%);
+  border-radius: var(--tag-radius);
+  color: var(--primary-color);
+  font-size: var(--text-base);
   margin: 4px;
   padding: 8px 16px;
 }
