@@ -8,7 +8,7 @@
   display: flex;
   justify-content: flex-start;
   padding: 2em;
-  width: 80%;
+  flex-wrap: wrap;
 }
 
 .experience-block .container .title {
@@ -39,6 +39,7 @@
   display: flex;
   justify-content: left;
   width: 100%;
+  font-size: var(--text-lg);
   border-bottom: 1px solid var(--light-border);
 }
 
@@ -52,7 +53,7 @@
 
 .active {
   color: var(--primary-menu);
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid var(--primary-menu);
 }
 
 .company:hover {
@@ -66,12 +67,45 @@
   height: 2px;
 }
 
-.company-block {
-  padding: 0em 1em;
-  width: 100%;
+.experience-info {
+  display: flex;
+  padding-left: 1em;
 }
 
-.experience-summary ul {
+.experience-info ul {
   margin: 0;
   padding: 0;
 }
+
+.company-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-title {
+  display: flex;
+  font-size: var(--text-2xl);
+  padding: 4px 0;
+}
+
+.experience-duration {
+  display: flex;
+  font-size: var(--text-base);
+  font-style: italic;
+  padding-bottom: 4px;
+}
+
+.experience-summary{
+  display: flex;
+  padding: 1em;
+  text-align: justify;
+  font-size: var(--text-lg);
+}
+
+
+.experience-summary ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+

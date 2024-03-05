@@ -35,7 +35,7 @@ export default function Experience() {
             ))}
         </div>
 
-        <div className="expereince-summary">
+        <div className="experience-info">
           {experienceData &&
             experienceData.map((data) =>
               data.active ? (
