@@ -9,7 +9,7 @@
       "Ideated and developed a new simulation algorithm based on the Monte Carlo method, resulting in an improved forecast prediction by over 90%, directly correlating with a 30% increase in sales. Utilized multi-threaded and asynchronous programming paradigms to optimize performance and scalability of the algorithm.",
       "Managed TCP/IP, HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud, Improved the product's high availability and fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience. This project successfully completed and delivered well ahead of the deadline."
     ],
-    "skills":["Java","Spring-boot","React","PostgreSQL","JavaScript","Docker","Kubernetes","AWS"],
+    "skills":["Java","Spring-boot","React","PostgreSQL","JavaScript","Docker","Kubernetes","AWS","Kafka"],
     "active": true
   },
   {
@@ -22,7 +22,7 @@
       "Ideated and developed a new simulation algorithm based on the Monte Carlo method, resulting in an improved forecast prediction by over 90%, directly correlating with a 30% increase in sales. Utilized multi-threaded and asynchronous programming paradigms to optimize performance and scalability of the algorithm.",
       "Managed TCP/IP, HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud, Improved the product's high availability and fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience. This project successfully completed and delivered well ahead of the deadline."
     ],
-    "skills":["Java","Spring-boot","React","PostgreSQL","JavaScript","Docker","Kubernetes","AWS"],
+    "skills":["Java","Python","Spring-boot","Angular","MySQL","TypeScript","ExpressJS"],
     "active": false
   }
 ]
