@@ -28,7 +28,9 @@ export default function Navbar() {
   return (
     <header className="nav-header">
       <div className="logo-container">
-        <div className="logo-text">K</div>
+        <a href="#home">
+          <div className="logo-text"> K</div>
+        </a>
       </div>
 
       {!showHamBurger && (
@@ -44,7 +46,7 @@ export default function Navbar() {
         </nav>
       )}
 
-      {showHamBurger && !showBurgerContent && (
+      {showHamBurger && (
         <div
           className="burger"
           onClick={() => setShowBurgerContent((prev) => !prev)}

@@ -25,15 +25,27 @@
 .projects-block .wrapper {
   display: grid;
   width:inherit;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-column-gap: 1em;
   grid-row-gap: 1em;
+  grid-auto-rows: 100px;
+  
 }
 
-.projects-block .wrapper > div {
+.projects-block .wrapper > .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eee;
   padding: 1em;
-  
+  cursor: pointer;
+  border-radius: 2px;
+  transition: ease-in-out .3s;
+}
+
+.item:hover{
+  box-shadow: 5px 5px var(--blue-theme);
+  transform : translate(-5px, -2px);
 }
 
 .projects-block .wrapper > div:nth-child(odd) {
