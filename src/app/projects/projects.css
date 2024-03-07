@@ -12,7 +12,6 @@
   flex-wrap: wrap;
 }
 
-
 .projects-block .container .title {
   display: flex;
   width: inherit;
@@ -21,4 +20,22 @@
   font-size: var(--text-4xl);
   font-weight: 700;
   color: rgb(0, 0, 0);
+}
+
+.projects-block .wrapper {
+  display: grid;
+  width:inherit;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.projects-block .wrapper > div {
+  background-color: #eee;
+  padding: 1em;
+  
+}
+
+.projects-block .wrapper > div:nth-child(odd) {
+  background-color: #ddd;
 }
