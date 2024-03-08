@@ -8,13 +8,15 @@
   --secondary-menu: hsla(0, 0%, 0%, 0.6);
   --primary-menu: hsl(0, 0%, 0%);
 
-  --light-border: rgb(212, 212, 212);
+  --light-border: rgb(228, 228, 228);
 
   --button-bg: hsl(0, 0%, 100%);
   --button-text: hsl(0, 0%, 0%);
 
   --tag-radius: 20px;
   --tag-bg: hsl(0, 0%, 95%);
+
+  --red-flame:hsl(7, 81%, 48%);
 
   --nav-height: 4.5em;
 
@@ -162,7 +164,7 @@ main {
   cursor: pointer;
   border: 1px solid var(--light-border);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--button-bg);
   align-items: center;
   display: flex;
   transition: 0.3s ease-in-out
@@ -170,6 +172,6 @@ main {
 
 .move-top:hover{
   transform: translate(0px, -4px);
-  box-shadow: 1px 6px rgb(171, 30, 30);
+  box-shadow: 1px 6px var(--red-flame);
 }
 
