@@ -16,7 +16,7 @@
   --tag-radius: 20px;
   --tag-bg: hsl(0, 0%, 95%);
 
-  --nav-height: 4em;
+  --nav-height: 4.5em;
 
   --text-1xs: 0.6rem;
   --text-xs: 0.8rem;
@@ -151,4 +151,15 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.move-top {
+  padding: 1em;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  width: 4%;
+  height: 4%;
+  margin:1em;
 }
