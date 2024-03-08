@@ -5,8 +5,10 @@ import Experience from "./experience/page";
 import Home from "./home/page";
 import Navbar from "./navbar/navbar";
 import Projects from "./projects/page";
+import Image from "next/image";
 
 export default function Page() {
+
   return (
     <div className="portfolio-content">
       <Navbar />
@@ -17,7 +19,12 @@ export default function Page() {
         <Contact />
 
         <div className="move-top">
-          
+          <Image
+            src="scroll-top.svg"
+            width={50}
+            height={50}
+            alt="scroll-top"
+          />
         </div>
       </main>
     </div>

@@ -155,11 +155,21 @@ main {
 
 .move-top {
   padding: 1em;
-  background-color: red;
   position: fixed;
   bottom: 0;
   right: 0px;
-  width: 4%;
-  height: 4%;
   margin:1em;
+  cursor: pointer;
+  border: 1px solid var(--light-border);
+  border-radius: 50%;
+  background-color: #ffffff;
+  align-items: center;
+  display: flex;
+  transition: 0.3s ease-in-out
 }
+
+.move-top:hover{
+  transform: translate(0px, -4px);
+  box-shadow: 1px 6px red;
+}
+
