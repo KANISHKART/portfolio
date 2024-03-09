@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Contact from "./contact/page";
 import Experience from "./experience/page";
 import Home from "./home/page";
@@ -8,9 +8,29 @@ import Projects from "./projects/page";
 import Image from "next/image";
 
 export default function Page() {
+  const scrollRef = useRef();
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    });
+  }, []);
 
   return (
-    <div className="portfolio-content">
+    <div className="portfolio-content" ref={scrollRef}>
       <Navbar />
       <main>
         <Home />
@@ -18,14 +38,16 @@ export default function Page() {
         <Projects />
         <Contact />
 
-        <div className="move-top">
-          <Image
-            src="scroll-top.svg"
-            width={50}
-            height={50}
-            alt="scroll-top"
-          />
-        </div>
+        {showScrollTop && (
+          <div className="move-top" onClick={() => scrollTop()}>
+            <Image
+              src="scroll-top.svg"
+              width={40}
+              height={40}
+              alt="scroll-top"
+            />
+          </div>
+        )}
       </main>
     </div>
   );
