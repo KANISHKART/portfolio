@@ -6,6 +6,7 @@ import Home from "./home/page";
 import Navbar from "./navbar/navbar";
 import Projects from "./projects/page";
 import Image from "next/image";
+import Skills from "./skills/page";
 
 export default function Page() {
   const scrollRef = useRef();
@@ -36,14 +37,15 @@ export default function Page() {
         <Home />
         <Experience />
         <Projects />
+        <Skills />
         <Contact />
 
         {showScrollTop && (
           <div className="move-top" onClick={() => scrollTop()}>
             <Image
               src="scroll-top.svg"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               alt="scroll-top"
             />
           </div>

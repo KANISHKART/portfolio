@@ -1,0 +1,5 @@
+.skills-block {
+    display: flex;
+    justify-content: center;
+    padding-top: var(--nav-height);
+  }

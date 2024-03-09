@@ -38,7 +38,7 @@ export default function Navbar() {
           <a href="#home">Home</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#contact">Skills</a>
+          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <button className="resume-button" type="button">
             Resume

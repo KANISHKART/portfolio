@@ -39,7 +39,7 @@ export default function HamBurger({handleClose, isOpen} ) {
         <a onClick={closeHam} href="#projects">
           Projects
         </a>
-        <a onClick={closeHam} href="#contact">
+        <a onClick={closeHam} href="#skills">
           Skills
         </a>
         <a onClick={closeHam} href="#contact">
