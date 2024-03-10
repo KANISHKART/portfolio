@@ -1,5 +1,39 @@
 .skills-block {
-    display: flex;
-    justify-content: center;
-    padding-top: var(--nav-height);
-  }
+  display: flex;
+  justify-content: center;
+  padding-top: var(--nav-height);
+}
+
+.skills-block .container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2em;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.skills-block .container .title {
+  display: flex;
+  width: inherit;
+  justify-content: flex-start;
+  text-wrap: nowrap;
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.skills-block .wrapper {
+  display: grid;
+  width: inherit;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  grid-auto-rows: 100px;
+}
+
+.skills-block .wrapper > div {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./experience.css";
 
 import experience from "../database/data.json";
-import { data } from "autoprefixer";
 
 export default function Experience() {
   const [experienceData, setExperienceData] = useState(experience);

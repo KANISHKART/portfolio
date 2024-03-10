@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "path": "logo/lang/java.svg",
+    "name": "java",
+    "type": "lang"
+  },
+  {
+    "id": 2,
+    "path": "logo/lang/python.svg",
+    "name": "python",
+    "type": "lang"
+  },
+  {
+    "id": 3,
+    "path": "logo/lang/javascript.svg",
+    "name": "javascript",
+    "type": "lang"
+  },
+  {
+    "id": 4,
+    "path": "logo/lang/typescript.svg",
+    "name": "typescript",
+    "type": "lang"
+  },
+  {
+    "id": 5,
+    "path": "logo/lang/haskell.svg",
+    "name": "haskell",
+    "type": "lang"
+  },
+  {
+    "id": 6,
+    "path": "logo/lang/c.svg",
+    "name": "c",
+    "type": "lang"
+  }
+]
