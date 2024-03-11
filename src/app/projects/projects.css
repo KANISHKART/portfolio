@@ -43,7 +43,7 @@
   transition: ease-in-out .3s;
 }
 
-.item:hover{
+.projects-block  .item:hover{
   box-shadow: 5px 5px var(--blue-theme);
   transform : translate(-5px, -2px);
 }

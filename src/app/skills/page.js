@@ -11,21 +11,31 @@ export default function Skills() {
       <div className="container">
         <span className="title">Skilled at</span>
 
-        {showSkills &&
-          showSkills.map((skill) => {
-            return (
-              <div className="wrapper" key={skill.id}>
-                <div className="item">
+        <div className="skill-filter">
+          <div className="filter-item">All</div>
+          <div className="filter-item">Languages</div>
+          <div className="filter-item">Databases</div>
+          <div className="filter-item">Frameworks</div>
+          <div className="filter-item">Webdev</div>
+
+        </div>
+
+        <div className="wrapper">
+          {showSkills &&
+            showSkills.map((skill) => {
+              return (
+                <div className="item" key={skill.id}>
                   <Image
                     src={skill.path}
                     alt={skill.name}
-                    width={100}
-                    height={100}
+                    width={75}
+                    height={75}
+                    draggable={false}
                   />
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+        </div>
       </div>
     </section>
   );
