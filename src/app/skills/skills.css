@@ -56,7 +56,8 @@
 }
 
 .skills-filter .filter-item:hover {
-
+  box-shadow: 5px 5px var(--blue-theme);
+  transform: translate(-5px, -2px);
 }
 
 .filter-item.active {
@@ -67,4 +68,6 @@
 .filter-item.active:hover{
   color: white;
   background-color: black;
+  box-shadow: none;
+  transform: none;
 }
