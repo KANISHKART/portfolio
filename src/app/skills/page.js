@@ -12,7 +12,7 @@ export default function Skills() {
         <span className="title">Skilled at</span>
 
         <div className="skills-filter">
-          <div className="filter-item">All</div>
+          <div className="filter-item active">All</div>
           <div className="filter-item">Languages</div>
           <div className="filter-item">Databases</div>
           <div className="filter-item">Frameworks</div>

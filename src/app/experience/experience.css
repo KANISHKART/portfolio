@@ -42,7 +42,7 @@
   color: var(--secondary-menu);
 }
 
-.active {
+.company.active {
   color: var(--primary-menu);
   border-bottom: 3px solid var(--primary-menu);
 }
