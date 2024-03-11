@@ -11,13 +11,12 @@ export default function Skills() {
       <div className="container">
         <span className="title">Skilled at</span>
 
-        <div className="skill-filter">
+        <div className="skills-filter">
           <div className="filter-item">All</div>
           <div className="filter-item">Languages</div>
           <div className="filter-item">Databases</div>
           <div className="filter-item">Frameworks</div>
           <div className="filter-item">Webdev</div>
-
         </div>
 
         <div className="wrapper">
@@ -28,8 +27,8 @@ export default function Skills() {
                   <Image
                     src={skill.path}
                     alt={skill.name}
-                    width={75}
-                    height={75}
+                    width={60}
+                    height={60}
                     draggable={false}
                   />
                 </div>

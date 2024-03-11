@@ -38,3 +38,21 @@
   align-items: center;
 }
 
+.skills-filter {
+  display: flex;
+  width: inherit;
+  justify-content: flex-start;
+  flex-direction: row;
+  border: 1px solid black;
+  gap: 1em;
+  padding: 10px 2px;
+  flex-wrap: wrap;
+}
+
+.skills-filter .filter-item {
+
+  background-color: black;
+  color: white;
+  padding : 10px ;
+  border-radius: var(--)
+}
