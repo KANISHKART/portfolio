@@ -43,16 +43,23 @@
   width: inherit;
   justify-content: flex-start;
   flex-direction: row;
-  border: 1px solid black;
   gap: 1em;
   padding: 10px 2px;
   flex-wrap: wrap;
 }
 
 .skills-filter .filter-item {
+  color: var(--primary-color);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: var(--button-radius);
+  cursor: pointer;
+}
 
-  background-color: black;
+.skills-filter .filter-item:hover {
   color: white;
-  padding : 10px ;
-  border-radius: var(--)
+  padding: 10px;
+  background-color: black;
+  border-radius: var(--button-radius);
+  cursor: pointer;
 }

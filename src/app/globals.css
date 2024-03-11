@@ -12,6 +12,7 @@
 
   --button-bg: hsl(0, 0%, 100%);
   --button-text: hsl(0, 0%, 0%);
+  --button-radius: 4px;
 
   --tag-radius: 20px;
   --tag-bg: hsl(0, 0%, 95%);
