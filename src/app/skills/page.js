@@ -14,7 +14,15 @@ export const FILTER_SKILLS = {
 export default function Skills() {
   const [showSkills, setShowSkills] = useState(skillsData);
 
-  const filterSkills = (type) => {};
+  const filterSkills = (filterSkill) => {
+    if (filterSkill === FILTER_SKILLS.ALL) setShowSkills(skillsData);
+    else
+      setShowSkills(() => {
+        return skillsData.filter((x) => {
+          if (x.type === filterSkill) return x;
+        });
+      });
+  };
 
   return (
     <section id="skills" className="skills-block">
