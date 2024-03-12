@@ -8,7 +8,7 @@ export const FILTER_SKILLS = {
   LANGUAGE: "Languages",
   DATABASES: "Databases",
   FRAMEWORKS: "Frameworks",
-  WEBDEV: "Webdev",
+  WEBDEV: "Web Dev",
 };
 
 export default function Skills() {

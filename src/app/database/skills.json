@@ -45,59 +45,54 @@
     "id": 8,
     "path": "logo/databases/postgresql.svg",
     "name": "pgDB",
-    "type": "database"
+    "type": "Databases"
   },
   {
     "id": 9,
     "path": "logo/databases/oracle.svg",
     "name": "oracle",
-    "type": "database"
+    "type": "Databases"
   },
   {
     "id": 10,
     "path": "logo/databases/mongodb.svg",
     "name": "mongodb",
-    "type": "database"
+    "type": "Databases"
   },
   {
     "id": 11,
     "path": "logo/databases/redis.svg",
     "name": "redis",
-    "type": "database"
-  }
-  ,
+    "type": "Databases"
+  },
   {
     "id": 12,
     "path": "logo/frameworks/nodejs.svg",
     "name": "nodejs",
-    "type": "framework"
-  }
-  ,
+    "type": "Frameworks"
+  },
   {
     "id": 13,
     "path": "logo/frameworks/spring.svg",
     "name": "spring",
-    "type": "framework"
-  }
-  ,
+    "type": "Frameworks"
+  },
   {
     "id": 14,
     "path": "logo/frameworks/react.svg",
     "name": "react",
-    "type": "framework"
-  }
-  ,
+    "type": "Frameworks"
+  },
   {
     "id": 14,
     "path": "logo/frameworks/angular.svg",
     "name": "angular",
-    "type": "framework"
-  }
-  ,
+    "type": "Frameworks"
+  },
   {
     "id": 14,
     "path": "logo/social/gitlab.svg",
     "name": "gitlab",
-    "type": "webdev"
+    "type": "Web Dev"
   }
 ]
