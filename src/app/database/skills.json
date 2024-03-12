@@ -3,43 +3,43 @@
     "id": 1,
     "path": "logo/lang/java.svg",
     "name": "java",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 2,
     "path": "logo/lang/python.svg",
     "name": "python",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 3,
     "path": "logo/lang/javascript.svg",
     "name": "javascript",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 4,
     "path": "logo/lang/typescript.svg",
     "name": "typescript",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 5,
     "path": "logo/lang/haskell.svg",
     "name": "haskell",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 6,
     "path": "logo/lang/c.svg",
     "name": "c",
-    "type": "lang"
+    "type": "Languages"
   },
   {
     "id": 7,
     "path": "logo/databases/mysql.svg",
     "name": "MySQl",
-    "type": "database"
+    "type": "Databases"
   },
   {
     "id": 8,
