@@ -34,5 +34,70 @@
     "path": "logo/lang/c.svg",
     "name": "c",
     "type": "lang"
+  },
+  {
+    "id": 7,
+    "path": "logo/databases/mysql.svg",
+    "name": "MySQl",
+    "type": "database"
+  },
+  {
+    "id": 8,
+    "path": "logo/databases/postgresql.svg",
+    "name": "pgDB",
+    "type": "database"
+  },
+  {
+    "id": 9,
+    "path": "logo/databases/oracle.svg",
+    "name": "oracle",
+    "type": "database"
+  },
+  {
+    "id": 10,
+    "path": "logo/databases/mongodb.svg",
+    "name": "mongodb",
+    "type": "database"
+  },
+  {
+    "id": 11,
+    "path": "logo/databases/redis.svg",
+    "name": "redis",
+    "type": "database"
+  }
+  ,
+  {
+    "id": 12,
+    "path": "logo/frameworks/nodejs.svg",
+    "name": "nodejs",
+    "type": "framework"
+  }
+  ,
+  {
+    "id": 13,
+    "path": "logo/frameworks/spring.svg",
+    "name": "spring",
+    "type": "framework"
+  }
+  ,
+  {
+    "id": 14,
+    "path": "logo/frameworks/react.svg",
+    "name": "react",
+    "type": "framework"
+  }
+  ,
+  {
+    "id": 14,
+    "path": "logo/frameworks/angular.svg",
+    "name": "angular",
+    "type": "framework"
+  }
+  ,
+  {
+    "id": 14,
+    "path": "logo/social/gitlab.svg",
+    "name": "gitlab",
+    "type": "webdev"
   }
 ]
