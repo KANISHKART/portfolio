@@ -3,25 +3,34 @@ import Image from "next/image";
 import { useState } from "react";
 import skillsData from "../database/skills.json";
 
-export const FILTER_SKILLS = {
-  ALL: { name: "All", active: true },
-  LANGUAGE: { name: "Languages", active: false },
-  DATABASES: { name: "Databases", active: false },
-  FRAMEWORKS: { name: "Frameworks", active: false },
-  WEBDEV: { name: "Web Dev", active: false },
-};
-
 export default function Skills() {
   const [showSkills, setShowSkills] = useState(skillsData);
 
+  const [showType, setShowType] = useState([
+    { id: 1, name: "All", active: true },
+    { id: 2, name: "Languages", active: false },
+    { id: 3, name: "Databases", active: false },
+    { id: 4, name: "Frameworks", active: false },
+    { id: 5, name: "Web Dev", active: false },
+  ]);
+
   const filterSkills = (filterSkill) => {
-    if (filterSkill === FILTER_SKILLS.ALL.name) setShowSkills(skillsData);
+    if (filterSkill === "All") setShowSkills(skillsData);
     else
       setShowSkills(() => {
         return skillsData.filter((x) => {
           if (x.type === filterSkill) return x;
         });
       });
+
+    setShowType(() => {
+      return showType.map((x) => {
+        return x.name === filterSkill
+          ? { ...x, active: true }
+          : { ...x, active: false };
+      });
+    });
+
   };
 
   return (
@@ -30,38 +39,18 @@ export default function Skills() {
         <span className="title">Skilled at</span>
 
         <div className="skills-filter">
-          <div
-            className={`filter-item ${
-              FILTER_SKILLS.ALL.active ? "active" : ""
-            }`}
-            onClick={() => filterSkills(FILTER_SKILLS.ALL.name)}
-          >
-            {FILTER_SKILLS.ALL.name}
-          </div>
-          <div
-            className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.LANGUAGE.name)}
-          >
-            {FILTER_SKILLS.LANGUAGE.name}
-          </div>
-          <div
-            className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.DATABASES.name)}
-          >
-            {FILTER_SKILLS.DATABASES.name}
-          </div>
-          <div
-            className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.FRAMEWORKS.name)}
-          >
-            {FILTER_SKILLS.FRAMEWORKS.name}
-          </div>
-          <div
-            className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.WEBDEV.name)}
-          >
-            {FILTER_SKILLS.WEBDEV.name}
-          </div>
+          {showType &&
+            showType.map((type) => {
+              return (
+                <div
+                  key={type.id}
+                  className={`filter-item ${type.active ? "active" : ""}`}
+                  onClick={() => filterSkills(type.name)}
+                >
+                  {type.name}
+                </div>
+              );
+            })}
         </div>
 
         <div className="wrapper">
