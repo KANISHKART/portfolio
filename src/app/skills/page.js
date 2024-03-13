@@ -4,18 +4,18 @@ import { useState } from "react";
 import skillsData from "../database/skills.json";
 
 export const FILTER_SKILLS = {
-  ALL: "All",
-  LANGUAGE: "Languages",
-  DATABASES: "Databases",
-  FRAMEWORKS: "Frameworks",
-  WEBDEV: "Web Dev",
+  ALL: { name: "All", active: true },
+  LANGUAGE: { name: "Languages", active: false },
+  DATABASES: { name: "Databases", active: false },
+  FRAMEWORKS: { name: "Frameworks", active: false },
+  WEBDEV: { name: "Web Dev", active: false },
 };
 
 export default function Skills() {
   const [showSkills, setShowSkills] = useState(skillsData);
 
   const filterSkills = (filterSkill) => {
-    if (filterSkill === FILTER_SKILLS.ALL) setShowSkills(skillsData);
+    if (filterSkill === FILTER_SKILLS.ALL.name) setShowSkills(skillsData);
     else
       setShowSkills(() => {
         return skillsData.filter((x) => {
@@ -31,34 +31,36 @@ export default function Skills() {
 
         <div className="skills-filter">
           <div
-            className="filter-item active"
-            onClick={() => filterSkills(FILTER_SKILLS.ALL)}
+            className={`filter-item ${
+              FILTER_SKILLS.ALL.active ? "active" : ""
+            }`}
+            onClick={() => filterSkills(FILTER_SKILLS.ALL.name)}
           >
-            {FILTER_SKILLS.ALL}
+            {FILTER_SKILLS.ALL.name}
           </div>
           <div
             className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.LANGUAGE)}
+            onClick={() => filterSkills(FILTER_SKILLS.LANGUAGE.name)}
           >
-            {FILTER_SKILLS.LANGUAGE}
+            {FILTER_SKILLS.LANGUAGE.name}
           </div>
           <div
             className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.DATABASES)}
+            onClick={() => filterSkills(FILTER_SKILLS.DATABASES.name)}
           >
-            {FILTER_SKILLS.DATABASES}
+            {FILTER_SKILLS.DATABASES.name}
           </div>
           <div
             className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.FRAMEWORKS)}
+            onClick={() => filterSkills(FILTER_SKILLS.FRAMEWORKS.name)}
           >
-            {FILTER_SKILLS.FRAMEWORKS}
+            {FILTER_SKILLS.FRAMEWORKS.name}
           </div>
           <div
             className="filter-item"
-            onClick={() => filterSkills(FILTER_SKILLS.WEBDEV)}
+            onClick={() => filterSkills(FILTER_SKILLS.WEBDEV.name)}
           >
-            {FILTER_SKILLS.WEBDEV}
+            {FILTER_SKILLS.WEBDEV.name}
           </div>
         </div>
 
