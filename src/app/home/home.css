@@ -1,16 +1,16 @@
 .hero-block {
-  display: block;
-  height: 100dvh;
+  display: flex;
+  min-height: 100dvh;
 }
-
 
 .hero-block .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 2em;
+  padding-top: 4.5em;
+  flex-direction: row;
   flex-wrap: wrap;
   width: inherit;
-  gap: 4em;
   color: rgb(40, 40, 40);
 }
 
@@ -22,9 +22,11 @@
 .hero-greet {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   width: 100%;
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   font-weight: 300;
+  gap: 3em;
 }
 
 .hero-summary {
@@ -36,8 +38,26 @@
   font-weight: 300;
 }
 
-.hero-summary p{
-  
+.hero-connect {
+  display: flex;
+  justify-content: flex-start;
+  width: inherit;
+  width: 100%;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  font-size: var(--text-xl);
+  font-weight: 300;
+}
+
+.hero-connect a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 4px solid blue;
+}
+
+.hero-connect a:hover {
+  background-color: blue;
+  color: white;
 }
 
 .typewrite-container {
