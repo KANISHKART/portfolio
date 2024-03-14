@@ -7,15 +7,16 @@ export default function Home() {
   return (
     <section id="home" className="hero-block">
       <div className="container">
-        <div className="header-container">
+        <div className="hero-greet">
           <p> Hello! 👋</p>
         </div>
-        <div className="header-container">
-          <p> I&apos;m Kanishkar Thirunavukkarasu,</p>
-        </div>
 
-        <div className="role-container">
-          a<span className="typewrite-container">Full Stack Developer</span>
+        <div className="hero-summary">
+          <p>
+            I&apos;m <strong>Kanishkar T</strong>, an experienced software
+            engineer focused on designing & developing data intensive applications.🧑‍💻
+            {/* <span className="typewrite-container">Full Stack Developer</span>  */}
+          </p>
         </div>
       </div>
     </section>

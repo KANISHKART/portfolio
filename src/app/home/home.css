@@ -3,45 +3,45 @@
   height: 100dvh;
 }
 
-#home {
-  padding-top: var(--nav-height);
-}
 
-.header-container {
-  display: block;
-  position: relative;
-  text-align: center;
-  font-size: var(--text-6xl);
-  font-weight: 600;
-  width: 100%;
-}
-
-.hero-background{
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  height: 40px;
-}
-
-.header-container p {
-  margin: 0;
-  padding: 0;
-  width: inherit;
-}
-
-.role-container {
+.hero-block .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-size: var(--text-2xl);
-  font-weight: 600;
-  width: auto;
+  padding: 2em;
+  flex-wrap: wrap;
+  width: inherit;
+  gap: 4em;
+  color: rgb(40, 40, 40);
+}
+
+.hero-block p {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-greet {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: var(--text-3xl);
+  font-weight: 300;
+}
+
+.hero-summary {
+  display: flex;
+  justify-content: flex-start;
+  width: inherit;
+  width: 100%;
+  font-size: var(--text-3xl);
+  font-weight: 300;
+}
+
+.hero-summary p{
+  
 }
 
 .typewrite-container {
-  display: block;
+  display: flex;
   text-wrap: nowrap;
   color: var(--blue-theme);
   border-right: 3px solid var(--secondary-color);
@@ -68,41 +68,3 @@
     border-color: var(--secondary-color);
   }
 }
-
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  font-size: var(--text-xl);
-  font-weight: 600;
-  width: 60%;
-  border: 1px solid red;
-  padding : 0em 1em;
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 1em;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 10px 5px;
-  font-size: var(--text-xl);
-}
-
-.social-links a {
-  text-decoration: none;
-  color: var(--primary-color);
-  border-bottom: 3px solid transparent;
-}
-
-.social-links a:hover {
-  transition: border-bottom 0.5s ease-in-out;
-  border-bottom: 3px solid var(--secondary-color);
-}
-
