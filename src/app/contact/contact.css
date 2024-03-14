@@ -1,8 +1,45 @@
 .contact-block {
-  display: block;
-  height: 700px;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--nav-height);
 }
 
-#contact {
-  padding-bottom: 3em;
+.contact-block .container {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+.contact-block .container .title {
+  display: flex;
+  justify-content: center;
+  text-wrap: nowrap;
+  width: inherit;
+  font-size: var(--text-base);
+  color: rgb(83, 83, 83);
+  font-weight: 700;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 10px 5px;
+  font-size: var(--text-xl);
+}
+
+.social-links a {
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 3px solid transparent;
+}
+
+.social-links a:hover {
+  transition: border-bottom 0.5s ease-in-out;
+  border-bottom: 3px solid var(--secondary-color);
 }

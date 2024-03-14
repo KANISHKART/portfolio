@@ -17,19 +17,6 @@ export default function Home() {
           I&apos;m
           <span className="typewrite-container">Full Stack Developer</span>
         </div>
-
-        <div className="social-links">
-          <a href="https://www.linkedin.com/in/kanishkarthirunavukkarasu" target="_blank">
-            <Image src="linkedin.svg" height={40} width={40} alt="linkedin" />
-          </a>
-          <a href="https://github.com/KANISHKART" target="_blank">
-            {" "}
-            <Image src="github.svg" height={40} width={40} alt="github" />
-          </a>
-          <a href="mailto:kanishkar.thiruna@gmail.com" target="_blank" >
-            <Image src="email.svg" height={40} width={40} alt="email" />
-          </a>
-        </div>
       </div>
     </section>
   );
