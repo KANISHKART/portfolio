@@ -8,8 +8,8 @@
   display: flex;
   justify-content: flex-start;
   padding: 2em;
-  width: 100%;
   flex-wrap: wrap;
+  max-width: 650px;
 }
 
 .experience-block .container .title {
