@@ -1,12 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
 import "./home.css";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <section id="home" className="hero-block">
       <div className="container">
+
         <div className="hero-greet">
           <p> Hi! 👋</p>
           <div className="hero-summary">
@@ -25,7 +24,10 @@ export default function Home() {
             </a>
           </div>
         </div>
+
       </div>
     </section>
+
+    
   );
 }

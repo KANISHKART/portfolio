@@ -16,7 +16,7 @@
   display: flex;
   justify-content: flex-start;
   text-wrap: nowrap;
-  width: inherit;
+  width: 100%;
   font-size: var(--text-4xl);
   font-weight: 700;
   color: rgb(0, 0, 0);

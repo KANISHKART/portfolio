@@ -93,17 +93,7 @@ main {
     --text-9xl: 4rem;
   }
 
-  .header-tops::before {
-    display: none;
-  }
-
-  .header-container {
-    font-size: var(--text-4xl);
-  }
-
-  .about-container {
-    width: 40%;
-  }
+ 
 }
 
 @media (max-width: 1200px) {
