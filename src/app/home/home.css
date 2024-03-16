@@ -10,7 +10,7 @@
   padding: 2em;
   padding-top: var(--nav-height);
   flex-wrap: wrap;
-  color: rgb(40, 40, 40);
+  color: var(--primary-color);
   max-width: 650px;
   position: relative;
 }
@@ -38,6 +38,9 @@
 }
 
 .hero-connect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: inherit;
   width: 100%;
   font-size: var(--text-xl);
@@ -45,8 +48,10 @@
 }
 
 .hero-connect a {
+  display: flex;
+  width: fit-content;
   margin: 0;
-  color: black;
+  color: var(--primary-color);
   text-decoration: none;
   border-bottom-style: solid;
   border-bottom-color: #007bff;

@@ -1,6 +1,6 @@
 :root {
   --bg-color: hsl(0, 0%, 100%);
-  --primary-color: hsl(0, 0%, 0%);
+  --primary-color: hsl(0, 0%, 16%);
   --secondary-color: hsl(0, 0%, 11%);
 
   --blue-theme: hsl(221.2 83.2% 53.3%);
@@ -92,8 +92,6 @@ main {
     --text-8xl: 3rem;
     --text-9xl: 4rem;
   }
-
- 
 }
 
 @media (max-width: 1200px) {
