@@ -94,6 +94,12 @@ main {
   }
 }
 
+@media (width<=600px) {
+  .hero-skill {
+    flex-direction: column !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .about-container {
     width: 80%;
