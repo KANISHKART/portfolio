@@ -36,9 +36,9 @@ export default function Navbar() {
       {!showHamBurger && (
         <nav className="navbar">
           <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
           <button className="resume-button" type="button">
             Resume

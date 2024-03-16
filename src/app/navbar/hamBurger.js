@@ -1,10 +1,9 @@
 import { createPortal } from "react-dom";
 import "./hamBurger.css";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function HamBurger({handleClose, isOpen} ) {
-
-  const [closingAnimation, setclosingAnimation]=useState(true);
+export default function HamBurger({ handleClose, isOpen }) {
+  const [closingAnimation, setclosingAnimation] = useState(true);
 
   useEffect(() => {
     if (isOpen) document.body.style.overflow = "hidden";
@@ -22,7 +21,7 @@ export default function HamBurger({handleClose, isOpen} ) {
   };
 
   return createPortal(
-    <div className={`sidebar-nav ${closingAnimation? `open` :`close`}`}>
+    <div className={`sidebar-nav ${closingAnimation ? `open` : `close`}`}>
       <div className="close-action">
         <span className="close-icon" onClick={closeHam}>
           {" "}
@@ -33,14 +32,14 @@ export default function HamBurger({handleClose, isOpen} ) {
         <a onClick={closeHam} href="#home">
           Home
         </a>
+        <a onClick={closeHam} href="#skills">
+          Skills
+        </a>
         <a onClick={closeHam} href="#experience">
           Experience
         </a>
         <a onClick={closeHam} href="#projects">
           Projects
-        </a>
-        <a onClick={closeHam} href="#skills">
-          Skills
         </a>
         <a onClick={closeHam} href="#contact">
           Contact

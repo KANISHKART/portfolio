@@ -35,9 +35,9 @@ export default function Page() {
       <Navbar />
       <main>
         <Home />
+        <Skills />
         <Experience />
         <Projects />
-        <Skills />
         <Contact />
 
         {showScrollTop && (

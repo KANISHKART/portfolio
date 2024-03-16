@@ -27,7 +27,7 @@
   width: 100%;
   font-size: var(--text-4xl);
   font-weight: 300;
-  gap: 3em;
+  gap: 2em;
 }
 
 .hero-summary {
@@ -56,15 +56,21 @@
   color: var(--blue-theme);
   border-right: 3px solid var(--secondary-color);
   overflow: hidden;
-  animation: typing 2s steps(30, end), blinks 0.6s step-end infinite;
+  animation: typing 2.10s infinite ;
 }
 
 @keyframes typing {
   0% {
     width: 0%;
   }
-  100% {
+
+  40%,
+  60% {
     width: 100%;
+  }
+
+  100% {
+    width: 0%;
   }
 }
 
