@@ -1,49 +1,49 @@
 [
   {
     "id": 1,
-    "path": "logo/lang/java.svg",
+    "path": "icons/Java-Light.svg",
     "name": "java",
     "type": "Languages"
   },
   {
     "id": 2,
-    "path": "logo/lang/python.svg",
+    "path": "icons/Python-Light.svg",
     "name": "python",
     "type": "Languages"
   },
   {
     "id": 3,
-    "path": "logo/lang/javascript.svg",
+    "path": "icons/JavaScript.svg",
     "name": "javascript",
     "type": "Languages"
   },
   {
     "id": 4,
-    "path": "logo/lang/typescript.svg",
+    "path": "icons/TypeScript.svg",
     "name": "typescript",
     "type": "Languages"
   },
   {
     "id": 5,
-    "path": "logo/lang/haskell.svg",
+    "path": "icons/Haskell-Light.svg",
     "name": "haskell",
     "type": "Languages"
   },
   {
     "id": 6,
-    "path": "logo/lang/c.svg",
+    "path": "icons/C.svg",
     "name": "c",
     "type": "Languages"
   },
   {
     "id": 7,
-    "path": "logo/databases/mysql.svg",
+    "path": "icons/MySQL-Light.svg",
     "name": "MySQl",
     "type": "Databases"
   },
   {
     "id": 8,
-    "path": "logo/databases/postgresql.svg",
+    "path": "icons/PostgreSQL-Light.svg",
     "name": "pgDB",
     "type": "Databases"
   },
@@ -55,44 +55,62 @@
   },
   {
     "id": 10,
-    "path": "logo/databases/mongodb.svg",
+    "path": "icons/Mongodb.svg",
     "name": "mongodb",
     "type": "Databases"
   },
   {
     "id": 11,
-    "path": "logo/databases/redis.svg",
+    "path": "icons/Redis-Light.svg",
     "name": "redis",
     "type": "Databases"
   },
   {
     "id": 12,
-    "path": "logo/frameworks/nodejs.svg",
+    "path": "icons/NodeJS-Light.svg",
     "name": "nodejs",
     "type": "Frameworks"
   },
   {
     "id": 13,
-    "path": "logo/frameworks/spring.svg",
+    "path": "icons/Spring-Light.svg",
     "name": "spring",
     "type": "Frameworks"
   },
   {
     "id": 14,
-    "path": "logo/frameworks/react.svg",
+    "path": "icons/React-Light.svg",
     "name": "react",
     "type": "Frameworks"
   },
   {
     "id": 15,
-    "path": "logo/frameworks/angular.svg",
+    "path": "icons/Angular-Light.svg",
     "name": "angular",
     "type": "Frameworks"
   },
   {
     "id": 16,
-    "path": "logo/social/gitlab.svg",
+    "path": "icons/Git.svg",
     "name": "gitlab",
+    "type": "Web Dev"
+  },
+  {
+    "id": 17,
+    "path": "icons/Kafka.svg",
+    "name": "kafka",
+    "type": "Web Dev"
+  },
+  {
+    "id": 18,
+    "path": "icons/AWS-Light.svg",
+    "name": "AWS",
+    "type": "Web Dev"
+  },
+  {
+    "id": 19,
+    "path": "icons/FastAPI.svg",
+    "name": "FastAPI",
     "type": "Web Dev"
   }
 ]
