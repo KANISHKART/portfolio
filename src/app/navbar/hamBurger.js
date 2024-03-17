@@ -47,9 +47,15 @@ export default function HamBurger({ handleClose, isOpen }) {
       </nav>
 
       <div className="button-action">
-        <button className="resume-button" type="button">
-          Resume
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1O6WsZK4OBLwVatIrwhemtNWOm3PUgjDh/view?usp=drive_link"
+          target="_blank"
+          className="resume-link"
+        >
+          <button className="resume-button" type="button">
+            Resume
+          </button>
+        </a>
       </div>
     </div>,
     document.body

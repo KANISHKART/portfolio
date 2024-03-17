@@ -40,9 +40,15 @@ export default function Navbar() {
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <button className="resume-button" type="button">
-            Resume
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1O6WsZK4OBLwVatIrwhemtNWOm3PUgjDh/view?usp=drive_link"
+            target="_blank"
+            className="resume-link"
+          >
+            <button className="resume-button" type="button">
+              Resume
+            </button>
+          </a>
         </nav>
       )}
 

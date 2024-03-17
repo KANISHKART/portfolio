@@ -93,6 +93,7 @@
 .navbar a:hover:after {
   text-decoration: none;
   color: var(--primary-color);
+  height: 2px;
   font-family: inherit;
   width: 100%;
   left: 0;
@@ -122,3 +123,11 @@
   height: 3px;
   background-color: black;
 }
+
+.resume-link:hover:after{
+  display: none;
+}
+
+
+
+
