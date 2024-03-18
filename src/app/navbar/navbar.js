@@ -4,7 +4,9 @@ import HamBurger from "./hamBurger";
 import "./navbar.css";
 import { useState, useEffect, useCallback } from "react";
 export default function Navbar() {
-  const [showHamBurger, setShowHamBurger] = useState(false);
+  const isScreenWidthSmall = () => window.innerWidth <= 900;
+
+  const [showHamBurger, setShowHamBurger] = useState(isScreenWidthSmall);
 
   const [showBurgerContent, setShowBurgerContent] = useState(false);
 
