@@ -5,7 +5,7 @@ import "./navbar.css";
 import { useState, useEffect, useCallback } from "react";
 export default function Navbar() {
   const isScreenWidthSmall = () => {
-    if (window !== undefined) return window.innerWidth <= 900;
+    if (typeof window !== "undefined") return window.innerWidth <= 900;
     else return false;
   };
 
