@@ -99,6 +99,9 @@ main {
   .hero-skill {
     flex-direction: column !important;
   }
+  .typewrite-container {
+    height:var(--text-4xl) !important;
+  }
 }
 
 @media (max-width: 1200px) {

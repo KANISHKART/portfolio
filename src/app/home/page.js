@@ -6,20 +6,28 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const skillSet = ["Full Stack Development💻", "Swimming🏊‍♂️", "Cricket🏏"];
 
-  const [skill, setSkill] = useState(skillSet[0]);
+  const [skill, setSkill] = useState("");
 
-  const [idx, setIdx] = useState(1);
+  const [idx, setIdx] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIdx((prev) => (prev + 1) % skillSet.length);
-      setSkill(() => skillSet[idx]);
-    }, 2000);
+    let i = -1;
 
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [skill]);
+    let timeInterval = setInterval(() => {
+      if (i < skillSet[idx].length) {
+        setSkill((prev) => prev + skillSet[idx].charAt(i));
+        i++;
+      } else {
+        clearInterval(timeInterval);
+        setTimeout(() => {
+          setSkill(() => "");
+          setIdx((prev) => (prev + 1) % skillSet.length);
+        }, 2000);
+      }
+    }, 100);
+
+    return ()=> clearInterval(timeInterval);
+  }, [idx]);
 
   return (
     <section id="home" className="hero-block">

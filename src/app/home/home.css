@@ -54,24 +54,11 @@
 .typewrite-container {
   display: flex;
   color: var(--blue-theme);
+  min-width: none;
   border-right: 3px solid var(--secondary-color);
   overflow: hidden;
-  animation: typing 2.10s infinite ;
-}
-
-@keyframes typing {
-  0% {
-    width: 0%;
-  }
-
-  40%,
-  60% {
-    width: 100%;
-  }
-
-  100% {
-    width: 0%;
-  }
+  animation: blinks 0.5s infinite;
+  width: min-content;
 }
 
 @keyframes blinks {
