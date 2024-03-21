@@ -1,5 +1,5 @@
 :root {
-  --bg-color: hsla(227, 72%, 21%, 0.745);
+  --bg-color: #070626;
 
   --primary-color: white;
   --secondary-color: #70fe5a;
@@ -7,17 +7,17 @@
   --text-1xs: 0.6rem;
   --text-xs: 0.8rem;
   --text-small: 0.945rem;
-  --text-base: 1rem;
+  --text-base: 1.100rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-3xl: 1.875rem;
   --text-4xl: 2.25rem;
-  --text-5xl: 3rem;
-  --text-6xl: 3.75rem;
-  --text-7xl: 4.5rem;
-  --text-8xl: 6rem;
-  --text-9xl: 8rem;
+  --text-5xl: 2.5rem;
+  --text-6xl: 3rem;
+  --text-7xl: 3.5rem;
+  --text-8xl: 4rem;
+  --text-9xl: 6rem;
 }
 
 html {
@@ -57,10 +57,17 @@ h2,
 h1 {
   padding: 10px 5px;
   margin: 0;
-  font-weight: 900;
   display: flex;
 }
 
+h1{
+  font-size: var(--text-5xl);
+  font-weight: 900;
+}
+h2{
+  font-weight: 400;
+  font-size: var(--text-2xl);
+}
 .typewrite-container {
   display: block;
   color: var(--secondary-color);
