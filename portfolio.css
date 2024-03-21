@@ -1,0 +1,140 @@
+:root {
+  --bg-color: hsla(228, 39%, 17%, 0.915);
+
+  --primary-color: white;
+  --secondary-color: #70fe5a;
+
+  --text-1xs: 0.6rem;
+  --text-xs: 0.8rem;
+  --text-small: 0.945rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6rem;
+  --text-9xl: 8rem;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  transition: ease-in-out;
+}
+
+.header-tops {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+h2,
+h1 {
+  padding: 10px 5px;
+  margin: 0;
+  font-weight: 900;
+  display: flex;
+}
+
+.typewrite-container {
+  display: block;
+  color: var(--secondary-color);
+  border-right: 3px solid var(--secondary-color);
+  padding: 0px 5px;
+  overflow: hidden;
+  animation: typing 2s steps(30, end), blinks .5s step-end infinite;
+  
+}
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blinks {
+    from, to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: var(--secondary-color);
+    }
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px 5px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+}
+
+.social-links a:hover{
+    transition: border-bottom .5s ease-in-out;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+
+@media (width<=800px) {
+    body {
+      --text-small: 0.7rem;
+      --text-base: 0.8rem;
+      --text-lg: 1rem;
+      --text-xl: 1.125rem;
+      --text-2xl: 1.25rem;
+      --text-3xl: 1.55rem;
+      --text-4xl: 1.875rem;
+    }
+  }
+  
+  @media (max-width: 1250px) {
+   
+  }
+  
+  @media (max-width: 900px) {
+  
+    
+  }
+  
+  @media (max-width: 500px) {
+  
+   
+  }
+  
