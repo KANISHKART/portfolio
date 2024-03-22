@@ -26,7 +26,7 @@
 .projects-block .wrapper {
   display: grid;
   width: inherit;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-column-gap: 1em;
   grid-row-gap: 1em;
 }
@@ -50,6 +50,8 @@
   width: 100%;
   font-weight: 600;
   font-size: var(--text-2xl);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-summary {

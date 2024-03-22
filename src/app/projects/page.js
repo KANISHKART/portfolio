@@ -2,6 +2,7 @@
 import "./projects.css";
 import { useState } from "react";
 import projects from "../database/project.json";
+import Image from "next/image";
 
 export default function Projects() {
   const [projectData, setProjectData] = useState(projects);
@@ -16,7 +17,10 @@ export default function Projects() {
             projectData.map((data, index) => {
               return (
                 <div className="item" key={`project-${data.id}-${index}`}>
-                  <div className="project-title">{data.name}</div>
+                  <div className="project-title">
+                    {data.name} 
+                    <Image src="./link.svg" width={20} height={20} color="grey" alt="link" />
+                  </div>
 
                   <div className="project-summary">{data.summary}</div>
 
