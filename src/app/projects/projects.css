@@ -31,6 +31,15 @@
   grid-row-gap: 1em;
 }
 
+/* .projects-block .wrapper a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.projects-block .wrapper a:hover {
+  text-decoration: none;
+} */
+
 .projects-block .wrapper > .item {
   display: flex;
   justify-content: flex-start;
