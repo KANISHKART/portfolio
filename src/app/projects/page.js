@@ -16,10 +16,11 @@ export default function Projects() {
           {projectData != null &&
             projectData.map((data, index) => {
               return (
-                <div className="item" key={`project-${data.id}-${index}`}>
+                <a key={`project-${data.id}-${index}`} href={data.link} target="_blank">
+                <div className="item" >
                   <div className="project-title">
                     {data.name} 
-                    <Image src="./link.svg" width={20} height={20} color="grey" alt="link" />
+                    <Image src="./link.svg" width={30} height={30} color="grey" alt="link" />
                   </div>
 
                   <div className="project-summary">{data.summary}</div>
@@ -38,6 +39,8 @@ export default function Projects() {
                       })}
                   </div>
                 </div>
+
+                </a>
               );
             })}
         </div>
