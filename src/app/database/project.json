@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Bitcoin-tracker",
+    "summary": "A bitcoin tracker application which logs bitcoin logs as they get created.",
+    "tags": ["Python", "Bitcoin", "WebSocket"],
+    "link":"https://github.com/KANISHKART/bitcoin-tracker.git"
+  },
+  {
+    "id": 2,
+    "name": "Craigslist UX",
+    "summary": "Redisgn of craigslist interafce according to UI/UX laws.",
+    "tags": ["Wireframes", "Low-fidelity", "Medium-fidelity", "Figma"],
+    "link":""
+  },
+  {
+    "id": 3,
+    "name": "AES Encryption",
+    "summary": "AES Encryption & Decryption using C.",
+    "tags": ["C", "Github Actions", "Cryptography", "Symmetric Encryption"],
+    "link":""
+  },
+  {
+    "id": 4,
+    "name": "System Design",
+    "summary": "System Design for Assitive technology with in detail explanation of each design layer.",
+    "tags": ["AWS", "System Design", "Draw.io", "Architecture", "IoT","On-Premise","Document Management System"],
+    "link":""
+  },
+  {
+    "id": 5,
+    "name": "Notes App",
+    "summary": "Simple notes application using FARM stack.",
+    "tags": ["FastAPI", "Python", "React.js", "Express.js", "MongoDB"],
+    "link":""
+  },
+  {
+    "id": 6,
+    "name": "Cookspire",
+    "summary": "Social media application for cooking community",
+    "tags": ["Spring Boot", "Java", "React.js", "Express.js", "PostgreSQL", "MongoDB" ],
+    "link":""
+  }
+
+]

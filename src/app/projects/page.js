@@ -1,17 +1,41 @@
+"use client";
 import "./projects.css";
+import { useState } from "react";
+import projects from "../database/project.json";
 
 export default function Projects() {
+  const [projectData, setProjectData] = useState(projects);
+
   return (
     <section id="projects" className="projects-block">
       <div className="container">
         <span className="title">Projects Highlights</span>
 
         <div className="wrapper">
-          <div className="item">Bitcoin-tracker</div>
-          <div className="item">Craigslist UX</div>
-          <div className="item">AES Encryption</div>
-          <div className="item">System Design</div>
-          <div className="item">Notes App</div>
+          {projectData != null &&
+            projectData.map((data, index) => {
+              return (
+                <div className="item" key={`project-${data.id}-${index}`}>
+                  <div className="project-title">{data.name}</div>
+
+                  <div className="project-summary">{data.summary}</div>
+
+                  <div className="project-tags">
+                    {data.tags != null &&
+                      data.tags.map((tag, index) => {
+                        return (
+                          <div
+                            className="tag-value"
+                            key={`tag-${tag}-${index}`}
+                          >
+                            {tag}
+                          </div>
+                        );
+                      })}
+                  </div>
+                </div>
+              );
+            })}
         </div>
       </div>
     </section>

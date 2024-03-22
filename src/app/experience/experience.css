@@ -102,7 +102,7 @@ li {
 .skill-tag {
   display: flex;
   flex-direction: row;
-  background-color: hsl(0, 0%, 95%);
+  background-color: var(--tag-bg);
   border-radius: var(--tag-radius);
   color: var(--primary-color);
   font-size: var(--text-base);
