@@ -16,7 +16,11 @@ export default function Projects() {
           {projectData != null &&
             projectData.map((data, index) => {
               return (
-                <a key={`project-${data.id}-${index}`}>
+                <a
+                  key={`project-${data.id}-${index}`}
+                  href={data.link}
+                  target="_blank"
+                >
                   <div className="item">
                     <div className="project-title">
                       {data.name}
