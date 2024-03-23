@@ -24,7 +24,7 @@ export default function Home() {
   }, [windowDimensions]);
 
   return (
-    <div className="container">
+    <div id="home" className="container">
       <div className="header-container">
         {windowDimensions.winWidth > 500 && <p>Kanishkar Thirunavukkarasu</p>}
         {windowDimensions.winWidth < 500 && <p>Kanishkar T</p>}
