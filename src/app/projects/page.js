@@ -2,8 +2,8 @@ import "./projects.css";
 
 export default function Projects() {
   return (
-    <div id="projects" className="container">
-      This is project section
-    </div>
+    <section id="projects" className="projects-block">
+      <div className="container">This is project section</div>
+    </section>
   );
 }
