@@ -26,8 +26,8 @@ export default function Projects() {
                       {data.name}
                       <Image
                         src="./link.svg"
-                        width={30}
-                        height={30}
+                        width={25}
+                        height={25}
                         color="grey"
                         alt="link"
                       />
