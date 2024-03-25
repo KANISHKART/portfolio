@@ -1,45 +1,57 @@
 [
   {
+    "id": 5,
+    "name": "Notes App",
+    "summary": "Simple notes application using FARM stack.",
+    "tags": ["FastAPI", "Python", "React.js", "Express.js", "MongoDB"],
+    "link": "https://github.com/KANISHKART/notesApp.git"
+  },
+  {
+    "id": 6,
+    "name": "Cookspire",
+    "summary": "Social media application for cooking community",
+    "tags": [
+      "Spring Boot",
+      "Java",
+      "React.js",
+      "Express.js",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "link": "https://github.com/orgs/Cookspire/repositories"
+  },
+  {
     "id": 1,
     "name": "Bitcoin-tracker",
     "summary": "A bitcoin tracker application which logs bitcoin logs as they get created.",
     "tags": ["Python", "Bitcoin", "WebSocket"],
-    "link":"https://github.com/KANISHKART/bitcoin-tracker.git"
+    "link": "https://github.com/KANISHKART/bitcoin-tracker.git"
   },
   {
     "id": 2,
     "name": "Craigslist UI / UX",
     "summary": "Redisgn of craigslist interafce according to UI/UX laws.",
     "tags": ["Wireframes", "Low-fidelity", "Medium-fidelity", "Figma"],
-    "link":"https://github.com/KANISHKART/UX-Design.git"
+    "link": "https://github.com/KANISHKART/UX-Design.git"
   },
   {
     "id": 3,
     "name": "AES Encryption",
     "summary": "AES Encryption & Decryption using C.",
     "tags": ["C", "Github Actions", "Cryptography", "Symmetric Encryption"],
-    "link":"https://github.com/KANISHKART/Rijndael_C_library.git"
+    "link": "https://github.com/KANISHKART/Rijndael_C_library.git"
   },
   {
     "id": 4,
     "name": "System Design",
     "summary": "System Design for Assitive technology with in detail explanation of each design layer.",
-    "tags": ["AWS", "System Design", "Draw.io", "Architecture", "IoT","On-Premise","Document Management System"],
-    "link":"https://github.com/KANISHKART/System-Design.git"
-  },
-  {
-    "id": 5,
-    "name": "Notes App",
-    "summary": "Simple notes application using FARM stack.",
-    "tags": ["FastAPI", "Python", "React.js", "Express.js", "MongoDB"],
-    "link":"https://github.com/KANISHKART/notesApp.git"
-  },
-  {
-    "id": 6,
-    "name": "Cookspire",
-    "summary": "Social media application for cooking community",
-    "tags": ["Spring Boot", "Java", "React.js", "Express.js", "PostgreSQL", "MongoDB" ],
-    "link":"https://github.com/orgs/Cookspire/repositories"
+    "tags": [
+      "AWS",
+      "System Design",
+      "Draw.io",
+      "IoT",
+      "Document Management"
+    ],
+    "link": "https://github.com/KANISHKART/System-Design.git"
   }
-
 ]

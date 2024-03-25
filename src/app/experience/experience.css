@@ -105,7 +105,7 @@ li {
   background-color: var(--tag-bg);
   border-radius: var(--tag-radius);
   color: var(--primary-color);
-  font-size: var(--text-base);
+  font-size: var(--text-small);
   margin: 4px;
   padding: 8px 16px;
 }

@@ -65,7 +65,7 @@
 .project-summary {
   display: flex;
   width: 100%;
-  padding: 1em;
+  padding: 1em 0em;
   color: var(--light-primary-color);
 }
 
@@ -73,6 +73,7 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  gap:4px;
 }
 
 .project-tags > .tag-value {
@@ -81,8 +82,9 @@
   background-color: var(--tag-bg);
   border-radius: var(--tag-radius);
   color: var(--primary-color);
-  font-size: var(--text-base);
-  margin: 4px;
+  font-size: var(--text-small);
+  margin: 4px 0px;
+ 
   padding: 8px 16px;
 }
 
