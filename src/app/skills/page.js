@@ -65,6 +65,7 @@ export default function Skills() {
                     width={60}
                     height={60}
                     draggable={false}
+                    title={skill.name}
                   />
                 </div>
               );

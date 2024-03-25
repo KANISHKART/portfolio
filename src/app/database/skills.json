@@ -2,37 +2,37 @@
   {
     "id": 1,
     "path": "./icons/Java-Dark.svg",
-    "name": "java",
+    "name": "Java",
     "type": "Languages"
   },
   {
     "id": 2,
     "path": "./icons/Python-Dark.svg",
-    "name": "python",
+    "name": "Python",
     "type": "Languages"
   },
   {
     "id": 3,
     "path": "./icons/JavaScript.svg",
-    "name": "javascript",
+    "name": "Javascript",
     "type": "Languages"
   },
   {
     "id": 4,
     "path": "./icons/TypeScript.svg",
-    "name": "typescript",
+    "name": "Typescript",
     "type": "Languages"
   },
   {
     "id": 5,
     "path": "./icons/Haskell-Dark.svg",
-    "name": "haskell",
+    "name": "Haskell",
     "type": "Languages"
   },
   {
     "id": 6,
     "path": "./icons/C.svg",
-    "name": "c",
+    "name": "C",
     "type": "Languages"
   },
   {
@@ -44,55 +44,55 @@
   {
     "id": 8,
     "path": "./icons/PostgreSQL-Dark.svg",
-    "name": "pgDB",
+    "name": "PostgreSQL",
     "type": "Databases"
   },
   {
     "id": 9,
     "path": "./icons/MongoDB.svg",
-    "name": "mongodb",
+    "name": "Mongodb",
     "type": "Databases"
   },
   {
     "id": 10,
     "path": "./icons/Redis-Dark.svg",
-    "name": "redis",
+    "name": "Redis",
     "type": "Databases"
   },
   {
     "id": 11,
     "path": "./icons/NodeJS-Dark.svg",
-    "name": "nodejs",
+    "name": "Node.js",
     "type": "Frameworks"
   },
   {
     "id": 12,
     "path": "./icons/Spring-Dark.svg",
-    "name": "spring",
+    "name": "Spring",
     "type": "Frameworks"
   },
   {
     "id": 13,
     "path": "./icons/React-Dark.svg",
-    "name": "react",
+    "name": "React.js",
     "type": "Frameworks"
   },
   {
     "id": 14,
     "path": "./icons/Angular-Dark.svg",
-    "name": "angular",
+    "name": "Angular",
     "type": "Frameworks"
   },
   {
     "id": 15,
     "path": "./icons/Github-Dark.svg",
-    "name": "gitlab",
+    "name": "GitHub",
     "type": "Web Dev"
   },
   {
     "id": 16,
     "path": "./icons/Kafka.svg",
-    "name": "kafka",
+    "name": "Apache Kafka",
     "type": "Web Dev"
   },
   {
