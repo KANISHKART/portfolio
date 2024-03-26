@@ -19,6 +19,7 @@
   font-size: var(--text-base);
   color: rgb(83, 83, 83);
   font-weight: 700;
+  margin-bottom: 1em;
 }
 
 .social-links {
