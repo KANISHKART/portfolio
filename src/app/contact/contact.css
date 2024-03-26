@@ -31,6 +31,7 @@
   flex-wrap: wrap;
   align-content: center;
   font-size: var(--text-xl);
+  padding-bottom: 3em;
 }
 
 .social-links a {
