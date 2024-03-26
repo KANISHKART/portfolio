@@ -26,7 +26,7 @@
 .projects-block .wrapper {
   display: grid;
   width: inherit;
-  padding: 1em 0em;
+  padding: em 0em;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-column-gap: 1em;
   grid-row-gap: 1em;
@@ -47,11 +47,13 @@
   transition: ease-in-out 0.3s;
 }
 
-.projects-block .wrapper > .item {
+.projects-block .wrapper .item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  margin: 0.5em 0em;
 }
 
 .project-title {

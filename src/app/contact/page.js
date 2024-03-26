@@ -5,6 +5,11 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-block">
       <div className="container">
+        <div className="title">
+          {" "}
+          Designed & Developed by Kanishkar T 🤙 2024
+        </div>
+
         <div className="social-links">
           <a href="mailto:kanishkar.thiruna@gmail.com" target="_blank">
             <Image src="./email.svg" height={30} width={30} alt="email" />
@@ -19,11 +24,6 @@ export default function Contact() {
             {" "}
             <Image src="./github.svg" height={30} width={30} alt="github" />
           </a>
-        </div>
-
-        <div className="title">
-          {" "}
-          Designed & Developed by Kanishkar T 🤙 2024
         </div>
       </div>
     </section>
