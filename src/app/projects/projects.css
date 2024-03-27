@@ -26,6 +26,7 @@
 .projects-block .wrapper {
   display: grid;
   width: inherit;
+  padding: 1em 0em;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-column-gap: 1em;
   grid-row-gap: 1em;

@@ -44,8 +44,8 @@ export default function Page() {
           <div className="move-top" onClick={() => scrollTop()}>
             <Image
               src="./scroll-top.svg"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               alt="scroll-top"
             />
           </div>
