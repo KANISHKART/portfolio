@@ -11,7 +11,7 @@
   padding-top: var(--nav-height);
   flex-wrap: wrap;
   color: var(--primary-color);
-  max-width: 650px;
+  max-width: 950px;
   position: relative;
 }
 

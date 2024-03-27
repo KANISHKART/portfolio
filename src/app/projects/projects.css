@@ -10,7 +10,7 @@
   padding: 2em;
   width: 100%;
   flex-wrap: wrap;
-  max-width: 650px;
+  max-width: 950px;
 }
 
 .projects-block .container .title {
@@ -82,7 +82,7 @@
   background-color: var(--tag-bg);
   border-radius: var(--tag-radius);
   color: var(--primary-color);
-  font-size: var(--text-small);
+  font-size: var(--text-xs);
   margin: 4px 0px;
   padding: 8px 16px;
 }

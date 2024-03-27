@@ -78,6 +78,7 @@ main {
   height: inherit;
 }
 
+
 @media (width<=800px) {
   body {
     --text-small: 0.7rem;
@@ -100,7 +101,7 @@ main {
     flex-direction: column !important;
   }
   .typewrite-container {
-    height:var(--text-4xl) !important;
+    height: var(--text-4xl) !important;
   }
 }
 
