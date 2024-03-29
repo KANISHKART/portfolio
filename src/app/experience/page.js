@@ -7,6 +7,8 @@ import experience from "../database/data.json";
 export default function Experience() {
   const [experienceData, setExperienceData] = useState(experience);
 
+  const [showExp, setShowExp] = useState(0);
+
   const showData = (id) => {
     setExperienceData((data) => {
       return data.map((item) => {
@@ -15,6 +17,12 @@ export default function Experience() {
           : { ...item, active: false };
       });
     });
+
+    console.log(experienceData);
+  };
+
+  const showRole = (length) => {
+    setShowExp((prev) => (prev + 1) % length);
   };
 
   return (
@@ -24,7 +32,7 @@ export default function Experience() {
 
         <div className="companies">
           {experienceData &&
-            experienceData.map((data,index) => (
+            experienceData.map((data, index) => (
               <div
                 className={`company${data.active ? " active" : ""}`}
                 key={`company-${data.id}-${index}`}
@@ -37,33 +45,53 @@ export default function Experience() {
 
         <div className="experience-info">
           {experienceData &&
-            experienceData.map((data,index) =>
+            experienceData.map((data, coindex) =>
               data.active ? (
-                <div className="company-block" key={`experience-${data.id}-${index}`}>
-                  <div className="experience-title">{data.title}</div>
+                <div key={`company-${coindex}`}>
+                  {data.experience.length > 1 && (
+                    <button onClick={() => showRole(data.experience.length)}>
+                      Prev
+                    </button>
+                  )}
+                  {data.experience[showExp] && (
+                    <div className="company-block">
+                      <div className="experience-title">
+                        {data.experience[showExp].title}
+                      </div>
 
-                  <div className="experience-duration">{data.date}</div>
+                      <div className="experience-duration">
+                        {data.experience[showExp].date}
+                      </div>
 
-                  <div className="experience-summary">
-                    <ul>
-                      {data.summary.map((point, index) => (
-                        <li key={`summary-${index}-${index}`}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
+                      <div className="experience-summary">
+                        <ul>
+                          {data.experience[showExp].summary.map(
+                            (point, index) => (
+                              <li key={`summary-${index}-${index}`}>{point}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
 
-                  <div className="experience-skills">
-                    {data.skills.map((skill,index) => {
-                      return (
-                        <div className="skill-tag" key={`skill-${data.id}-${index}`}>
-                          {skill}
-                        </div>
-                      );
-                    })}
-                  </div>
+                      <div className="experience-skills">
+                        {data.experience[showExp].skills.map((skill, index) => {
+                          return (
+                            <div className="skill-tag" key={`skill-${index}`}>
+                              {skill}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                  {data.experience.length > 1 && (
+                    <button onClick={() => showRole(data.experience.length)}>
+                      Next
+                    </button>
+                  )}
                 </div>
               ) : (
-                <></>
+                <> </>
               )
             )}
         </div>

@@ -2,79 +2,88 @@
   {
     "id": 1,
     "name": "Tech Mahindra",
-    "title": "Software Engineer",
-    "date": "Jun 2022 - Jul 2023",
-    "summary": [
-      "Led the design and digitization of a cloud-native simulation tool, enhanced the automation by over 70% and improving report management.",
-      "Implemented UI/UX wireframes, database schema design, set up a CI/CD, caching mechanisms and version control. Containerized application to result in high availability & scalability.",
-      "Employed Monte Carlo simulation which improved forecast prediction by over 90% and directly correlating with a 30% increase in sales. Optimized prediction performance with multi-threading and asynchronous programming.",
-      "Managed TCP/IP, secure HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud. Improved the product's fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience."
-    ],
-    "skills": [
-      "Java",
-      "Spring Boot",
-      "React",
-      "PostgreSQL",
-      "Redis",
-      "JavaScript",
-      "Jenkins",
-      "Git",
-      "Docker",
-      "Kubernetes",
-      "AWS EKS",
-      "AWS Route53"
+    "experience": [
+      {
+        "exp_id": 1,
+        "title": "Software Engineer",
+        "date": "Jun 2022 - Jul 2023",
+        "summary": [
+          "Led the design and digitization of a cloud-native simulation tool, enhanced the automation by over 70% and improving report management.",
+          "Implemented UI/UX wireframes, database schema design, set up a CI/CD, caching mechanisms and version control. Containerized application to result in high availability & scalability.",
+          "Employed Monte Carlo simulation which improved forecast prediction by over 90% and directly correlating with a 30% increase in sales. Optimized prediction performance with multi-threading and asynchronous programming.",
+          "Managed TCP/IP, secure HTTP connections and optimized DNS infrastructure using Route 53 on AWS Cloud. Improved the product's fault-tolerance using health checks and failover policies, ensuring reliability of service, and enhancing user experience."
+        ],
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "React",
+          "PostgreSQL",
+          "Redis",
+          "JavaScript",
+          "Jenkins",
+          "Git",
+          "Docker",
+          "Kubernetes",
+          "AWS EKS",
+          "AWS Route53"
+        ]
+      }
     ],
     "active": true
   },
   {
     "id": 2,
     "name": "Infosys",
-    "title": "Senior Systems Engineer",
-    "date": "Sep 2019 - Jun 2022",
-    "summary": [
-      "Led the development of a distributed API automation tool employing a microservices architecture. Implemented code refactoring using REST APIs standards and object oriented design (OOP).",
-      "Eliminated anti-patterns in code, employed caching & rate limiting within API Gateway, event-driven communication using websockets and asynchronous API requests to optimize performance, resulting in an 80% reduction in API execution time.",
-      "Enhanced code quality assurance with documentation, code reviews, and test-driven development, reducing defects by 60%.",
-      "Boosted user count from 800 to 3000 by monitoring application logs and performance testing. Collaborated with internal team to work on image processing functionality using image hashing and Tesseract OCR to compare similar images."
+    "experience": [
+      {
+        "exp_id": 1,
+        "title": "Senior Systems Engineer",
+        "date": "Sep 2019 - Jun 2022",
+        "summary": [
+          "Led the development of a distributed API automation tool employing a microservices architecture. Implemented code refactoring using REST APIs standards and object oriented design (OOP).",
+          "Eliminated anti-patterns in code, employed caching & rate limiting within API Gateway, event-driven communication using websockets and asynchronous API requests to optimize performance, resulting in an 80% reduction in API execution time.",
+          "Enhanced code quality assurance with documentation, code reviews, and test-driven development, reducing defects by 60%.",
+          "Boosted user count from 800 to 3000 by monitoring application logs and performance testing. Collaborated with internal team to work on image processing functionality using image hashing and Tesseract OCR to compare similar images."
+        ],
+        "skills": [
+          "Java",
+          "Spring Boot",
+          "Python",
+          "Angular",
+          "MySQL",
+          "MongoDB",
+          "TypeScript",
+          "Express.js",
+          "Kafka",
+          "Grafana",
+          "JMeter",
+          "AWS",
+          "Git"
+        ]
+      },
+      {
+        "exp_id": 2,
+        "title": "Internship Trainee",
+        "date": "Dec 2018 - May 2019",
+        "summary": [
+          "Worked on internal application to troubleshoot existing codebase and make enhancements.",
+          "Improved the processing time of reporting service by 60% through caching mechanisms, made changes in codebase to adhere Software design principles (SOLID, DRY, YAGNI & KISS)",
+          "Optimized database queries through indexing, data denormalization, optimizing data retrieval & identify bottlenecks using query execution plan; these efforts resulted in a 50% reduction in query execution times and a 40% decrease in database server load.",
+          "Leveraged SonarQube to fix vulnerabilites, implemented secure authentication and authorization techniques (Oauth2 & RBAC)."
+        ],
+        "skills": [
+          "Java",
+          "RDBMS",
+          "Spring Boot",
+          "SonarQube",
+          "JavaScript",
+          "PostgreSQL",
+          "Troubleshooting",
+          "Debugging"
+        ]
+      }
     ],
-    "skills": [
-      "Java",
-      "Spring Boot",
-      "Python",
-      "Angular",
-      "MySQL",
-      "MongoDB",
-      "TypeScript",
-      "Express.js",
-      "Kafka",
-      "Grafana",
-      "JMeter",
-      "AWS",
-      "Git"
-    ],
-    "active": false
-  },
-  {
-    "id": 3,
-    "name": "Infosys",
-    "title": "Internship Trainee",
-    "date": "Dec 2018 - May 2019",
-    "summary": [
-      "Worked on internal application to troubleshoot existing codebase and make enhancements.",
-      "Improved the processing time of reporting service by 60% through caching mechanisms, made changes in codebase to adhere Software design principles (SOLID, DRY, YAGNI & KISS)",
-      "Optimized database queries through indexing, data denormalization, optimizing data retrieval & identify bottlenecks using query execution plan; these efforts resulted in a 50% reduction in query execution times and a 40% decrease in database server load.",
-      "Leveraged SonarQube to fix vulnerabilites, implemented secure authentication and authorization techniques (Oauth2 & RBAC)."
-    ],
-    "skills": [
-      "Java",
-      "RDBMS",
-      "Spring Boot",
-      "SonarQube",
-      "JavaScript",
-      "PostgreSQL",
-      "Troubleshooting",
-      "Debugging"
-    ],
+
     "active": false
   }
 ]
