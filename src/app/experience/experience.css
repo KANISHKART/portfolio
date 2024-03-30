@@ -54,6 +54,7 @@
 .experience-info {
   display: flex;
   padding-left: 1em;
+  position:relative;
 }
 
 .experience-info ul {
@@ -108,4 +109,28 @@ li {
   font-size: var(--text-xs);
   margin: 4px;
   padding: 8px 16px;
+}
+
+
+.scroll-right-container{
+  padding: 1em;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  border: 1px solid var(--light-border);
+  background-color: var(--button-bg);
+  align-items: center;
+  display: flex;
+}
+
+.scroll-left-container{
+  padding: 1em;
+  position: absolute;
+  top: 40%;
+  right:0;
+  cursor: pointer;
+  border: 1px solid var(--light-border);
+  background-color: var(--button-bg);
+  align-items: center;
+  display: flex;
 }

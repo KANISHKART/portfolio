@@ -18,6 +18,8 @@ export default function Experience() {
       });
     });
 
+    setShowExp(0);
+
     console.log(experienceData);
   };
 
@@ -47,10 +49,10 @@ export default function Experience() {
           {experienceData &&
             experienceData.map((data, coindex) =>
               data.active ? (
-                <div key={`company-${coindex}`}>
+                <>
                   {data.experience.length > 1 && (
                     <div
-                      className="scroll-right"
+                      className="scroll-left-container"
                       onClick={() => showRole(data.experience.length)}
                     >
                       <Image
@@ -60,9 +62,6 @@ export default function Experience() {
                         alt="next-exp"
                       />
                     </div>
-                    // <button onClick={() => showRole(data.experience.length)}>
-                    //   Prev
-                    // </button>
                   )}
                   {data.experience[showExp] && (
                     <div className="company-block">
@@ -96,11 +95,19 @@ export default function Experience() {
                     </div>
                   )}
                   {data.experience.length > 1 && (
-                    <button onClick={() => showRole(data.experience.length)}>
-                      Next
-                    </button>
+                    <div
+                      className="scroll-right-container"
+                      onClick={() => showRole(data.experience.length)}
+                    >
+                      <Image
+                        src="./next.svg"
+                        width={40}
+                        height={40}
+                        alt="next-exp"
+                      />
+                    </div>
                   )}
-                </div>
+                </>
               ) : (
                 <> </>
               )
