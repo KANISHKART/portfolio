@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import "./experience.css";
-
+import Image from "next/image";
 import experience from "../database/data.json";
 
 export default function Experience() {
@@ -49,9 +49,20 @@ export default function Experience() {
               data.active ? (
                 <div key={`company-${coindex}`}>
                   {data.experience.length > 1 && (
-                    <button onClick={() => showRole(data.experience.length)}>
-                      Prev
-                    </button>
+                    <div
+                      className="scroll-right"
+                      onClick={() => showRole(data.experience.length)}
+                    >
+                      <Image
+                        src="./next.svg"
+                        width={40}
+                        height={40}
+                        alt="next-exp"
+                      />
+                    </div>
+                    // <button onClick={() => showRole(data.experience.length)}>
+                    //   Prev
+                    // </button>
                   )}
                   {data.experience[showExp] && (
                     <div className="company-block">
