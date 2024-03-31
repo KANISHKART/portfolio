@@ -57,8 +57,8 @@ export default function Experience() {
                     >
                       <Image
                         src="./next.svg"
-                        width={40}
-                        height={40}
+                        width={20}
+                        height={20}
                         alt="next-exp"
                       />
                     </div>
@@ -100,9 +100,9 @@ export default function Experience() {
                       onClick={() => showRole(data.experience.length)}
                     >
                       <Image
-                        src="./next.svg"
-                        width={40}
-                        height={40}
+                        src="./previous.svg"
+                        width={20}
+                        height={20}
                         alt="next-exp"
                       />
                     </div>
