@@ -114,10 +114,10 @@ li {
 .scroll-right-container {
   padding: 1em;
   position: absolute;
-  top: 40%;
+  top: 0%;
+  right: 100px;
   cursor: pointer;
   border: 1px solid var(--light-border);
-  background-color: rgba(0, 0, 0, 0.199);
   align-items: center;
   display: flex;
   border-radius: 50%;
@@ -126,11 +126,10 @@ li {
 .scroll-left-container {
   padding: 1em;
   position: absolute;
-  top: 40%;
+  top: 0%;
   right: 0;
   cursor: pointer;
   border: 1px solid var(--light-border);
-  background-color: rgba(0, 0, 0, 0.199);
   align-items: center;
   display: flex;
   border-radius: 50%;
