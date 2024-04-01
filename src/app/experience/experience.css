@@ -121,6 +121,7 @@ li {
   align-items: center;
   display: flex;
   border-radius: 50%;
+  transition : ease-in-out 0.3s 
 }
 
 .scroll-left-container {
@@ -130,15 +131,19 @@ li {
   right: 0;
   cursor: pointer;
   border: 1px solid var(--light-border);
+  background-color: var(--button-bg);
   align-items: center;
   display: flex;
   border-radius: 50%;
+  transition : ease-in-out 0.3s 
 }
 
 .scroll-left-container:hover {
-  background-color: black;
+  box-shadow: 1px 1px 10px var(--blue-theme);
+  transform: translate(-5px, -2px);
 }
 
 .scroll-right-container:hover {
-  background-color: black;
+  box-shadow: 5px 5px var(--blue-theme);
+  transform: translate(-5px, -2px);
 }
