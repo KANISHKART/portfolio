@@ -94,7 +94,7 @@ export default function Experience() {
                       </div>
                     </div>
                   )}
-                  {data.experience.length > 1 && (
+                  {/* {data.experience.length > 1 && (
                     <div
                       className="scroll-right-container"
                       onClick={() => showRole(data.experience.length)}
@@ -106,7 +106,7 @@ export default function Experience() {
                         alt="next-exp"
                       />
                     </div>
-                  )}
+                  )} */}
                 </>
               ) : (
                 <> </>
