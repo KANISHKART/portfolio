@@ -140,10 +140,10 @@ li {
 
 .scroll-left-container:hover {
   box-shadow: 1px 1px 10px var(--blue-theme);
-  transform: translate(-5px, -2px);
+  transform: translate(-2px, -2px);
 }
 
 .scroll-right-container:hover {
-  box-shadow: 5px 5px var(--blue-theme);
-  transform: translate(-5px, -2px);
+  box-shadow: 1px 1px 10px var(--blue-theme);
+  transform: translate(-2px, -2px);
 }
