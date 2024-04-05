@@ -135,11 +135,12 @@ li {
   align-items: center;
   display: flex;
   border-radius: 50%;
-  transition : ease-in-out 0.3s 
+  transition : ease-in-out 0.3s;
+  
 }
 
 .scroll-left-container:hover {
-  box-shadow: 1px 1px 10px var(--blue-theme);
+  box-shadow: 1px 1px 7px var(--blue-theme);
   transform: translate(-2px, -2px);
 }
 
