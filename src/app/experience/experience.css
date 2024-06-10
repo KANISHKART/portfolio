@@ -8,6 +8,7 @@
   display: flex;
   justify-content: flex-start;
   padding: 2em;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -15,7 +16,7 @@
   display: flex;
   justify-content: flex-start;
   text-wrap: nowrap;
-  width: 100%;
+  width: inherit;
   font-size: var(--text-4xl);
   font-weight: 700;
   color: rgb(0, 0, 0);
