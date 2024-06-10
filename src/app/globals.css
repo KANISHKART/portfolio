@@ -170,6 +170,6 @@ main {
 
 .move-top:hover{
   transform: translate(0px, -4px);
-  box-shadow: 1px 6px red;
+  box-shadow: 1px 6px rgb(171, 30, 30);
 }
 
