@@ -92,13 +92,11 @@
 
 .navbar a:hover:after {
   text-decoration: none;
-  color: var(--primary-color);
   height: 2px;
   font-family: inherit;
   width: 100%;
   left: 0;
   bottom: -0.1em;
-  font-size: var(--text-2xl);
 }
 
 .burger {
