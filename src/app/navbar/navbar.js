@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import HamBurger from "./hamBurger";
 import "./navbar.css";
