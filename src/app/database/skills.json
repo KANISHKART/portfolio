@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "path": "icons/Java-Light.svg",
+    "path": "icons/Java-Dark.svg",
     "name": "java",
     "type": "Languages"
   },
   {
     "id": 2,
-    "path": "icons/Python-Light.svg",
+    "path": "icons/Python-Dark.svg",
     "name": "python",
     "type": "Languages"
   },
@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "path": "icons/Haskell-Light.svg",
+    "path": "icons/Haskell-Dark.svg",
     "name": "haskell",
     "type": "Languages"
   },
@@ -37,78 +37,72 @@
   },
   {
     "id": 7,
-    "path": "icons/MySQL-Light.svg",
+    "path": "icons/MySQL-Dark.svg",
     "name": "MySQl",
     "type": "Databases"
   },
   {
     "id": 8,
-    "path": "icons/PostgreSQL-Light.svg",
+    "path": "icons/PostgreSQL-Dark.svg",
     "name": "pgDB",
     "type": "Databases"
   },
   {
     "id": 9,
-    "path": "logo/databases/oracle.svg",
-    "name": "oracle",
-    "type": "Databases"
-  },
-  {
-    "id": 10,
     "path": "icons/Mongodb.svg",
     "name": "mongodb",
     "type": "Databases"
   },
   {
-    "id": 11,
-    "path": "icons/Redis-Light.svg",
+    "id": 10,
+    "path": "icons/Redis-Dark.svg",
     "name": "redis",
     "type": "Databases"
   },
   {
-    "id": 12,
-    "path": "icons/NodeJS-Light.svg",
+    "id": 11,
+    "path": "icons/NodeJS-Dark.svg",
     "name": "nodejs",
     "type": "Frameworks"
   },
   {
-    "id": 13,
-    "path": "icons/Spring-Light.svg",
+    "id": 12,
+    "path": "icons/Spring-Dark.svg",
     "name": "spring",
     "type": "Frameworks"
   },
   {
-    "id": 14,
-    "path": "icons/React-Light.svg",
+    "id": 13,
+    "path": "icons/React-Dark.svg",
     "name": "react",
     "type": "Frameworks"
   },
   {
-    "id": 15,
-    "path": "icons/Angular-Light.svg",
+    "id": 14,
+    "path": "icons/Angular-Dark.svg",
     "name": "angular",
     "type": "Frameworks"
   },
   {
-    "id": 16,
-    "path": "icons/Git.svg",
+    "id": 15,
+    "path": "icons/Github-Dark.svg",
     "name": "gitlab",
     "type": "Web Dev"
   },
   {
-    "id": 17,
+    "id": 16,
     "path": "icons/Kafka.svg",
     "name": "kafka",
     "type": "Web Dev"
   },
   {
-    "id": 18,
-    "path": "icons/AWS-Light.svg",
+    "id": 17,
+    "path": "icons/AWS-Dark.svg",
     "name": "AWS",
     "type": "Web Dev"
   },
   {
-    "id": 19,
+    "id": 18,
     "path": "icons/FastAPI.svg",
     "name": "FastAPI",
     "type": "Web Dev"

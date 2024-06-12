@@ -51,13 +51,6 @@
   color: var(--primary-menu);
 }
 
-.company:hover::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-}
-
 .experience-info {
   display: flex;
   padding-left: 1em;
@@ -109,7 +102,7 @@ li {
 .skill-tag {
   display: flex;
   flex-direction: row;
-  background-color:  hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
   border-radius: var(--tag-radius);
   color: var(--primary-color);
   font-size: var(--text-base);
