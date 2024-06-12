@@ -49,7 +49,7 @@
   },
   {
     "id": 9,
-    "path": "./icons/Mongodb.svg",
+    "path": "./icons/MongoDB.svg",
     "name": "mongodb",
     "type": "Databases"
   },
@@ -91,7 +91,7 @@
   },
   {
     "id": 16,
-    "path": "././icons/Kafka.svg",
+    "path": "./icons/Kafka.svg",
     "name": "kafka",
     "type": "Web Dev"
   },
