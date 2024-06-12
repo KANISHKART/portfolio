@@ -106,5 +106,17 @@
     "path": "./icons/FastAPI.svg",
     "name": "FastAPI",
     "type": "Web Dev"
+  },
+  {
+    "id": 19,
+    "path": "./icons/Kubernetes.svg",
+    "name": "Kubernetes",
+    "type": "Web Dev"
+  },
+  {
+    "id": 20,
+    "path": "./icons/Docker.svg",
+    "name": "Docker",
+    "type": "Web Dev"
   }
 ]
