@@ -24,10 +24,10 @@ export default function Experience() {
 
         <div className="companies">
           {experienceData &&
-            experienceData.map((data) => (
+            experienceData.map((data,index) => (
               <div
                 className={`company${data.active ? " active" : ""}`}
-                key={data.id}
+                key={`company-${data.id}-${index}`}
                 onClick={() => showData(data.id)}
               >
                 {data.name}
@@ -37,9 +37,9 @@ export default function Experience() {
 
         <div className="experience-info">
           {experienceData &&
-            experienceData.map((data) =>
+            experienceData.map((data,index) =>
               data.active ? (
-                <div className="company-block" key={`company-${data.id}`}>
+                <div className="company-block" key={`experience-${data.id}-${index}`}>
                   <div className="experience-title">{data.title}</div>
 
                   <div className="experience-duration">{data.date}</div>
@@ -47,15 +47,15 @@ export default function Experience() {
                   <div className="experience-summary">
                     <ul>
                       {data.summary.map((point, index) => (
-                        <li key={index}>{point}</li>
+                        <li key={`summary-${index}-${index}`}>{point}</li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="experience-skills">
-                    {data.skills.map((skill) => {
+                    {data.skills.map((skill,index) => {
                       return (
-                        <div className="skill-tag" key={`skill ${data.id}`}>
+                        <div className="skill-tag" key={`skill-${data.id}-${index}`}>
                           {skill}
                         </div>
                       );

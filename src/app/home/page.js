@@ -4,7 +4,7 @@ import "./home.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const skillSet = ["Full Stack Development💻", "Swimming🏊‍♂️", "Cricket🏏"];
+  const skillSet = ["Full Stack Development", "Swimming", "Cricket"];
 
   const [skill, setSkill] = useState("");
 
@@ -24,7 +24,7 @@ export default function Home() {
           setIdx((prev) => (prev + 1) % skillSet.length);
         }, 2000);
       }
-    }, 100);
+    }, 80);
 
     return ()=> clearInterval(timeInterval);
   }, [idx]);
