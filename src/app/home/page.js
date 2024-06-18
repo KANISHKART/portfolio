@@ -1,7 +1,7 @@
 "use client";
 import "./home.css";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function Home() {
   const skillSet = ["Full Stack Development", "Swimming", "Cricket"];
@@ -10,23 +10,28 @@ export default function Home() {
 
   const [idx, setIdx] = useState(0);
 
-  useEffect(() => {
-    let i = -1;
+  const textIndex=useRef(0);
 
-    let timeInterval = setInterval(() => {
-      if (i < skillSet[idx].length) {
-        setSkill((prev) => prev + skillSet[idx].charAt(i));
-        i++;
+  const displayText=useRef("");
+
+  useEffect(() => {
+    const timeInterval = setInterval(() => {
+      if (textIndex.current < skillSet[idx].length) {
+        displayText.current+=skillSet[idx].charAt(textIndex.current);
+        setSkill(() => displayText.current);
+        textIndex.current+=1;
       } else {
         clearInterval(timeInterval);
         setTimeout(() => {
           setSkill(() => "");
           setIdx((prev) => (prev + 1) % skillSet.length);
+          textIndex.current=0;
+          displayText.current="";
         }, 2000);
       }
-    }, 80);
+    }, 20);
 
-    return ()=> clearInterval(timeInterval);
+    return () => clearInterval(timeInterval);
   }, [idx]);
 
   return (
